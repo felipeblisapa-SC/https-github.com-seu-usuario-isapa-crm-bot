@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>CRM Isapa Bike</title>
+<script src="/vendor/chart.js"></script>
+<style>
+  :root{
+    --bg:#f3f5f9; --card:#ffffff; --card2:#f8fafc; --text:#1e293b; --muted:#64748b;
+    --accent:#2563eb; --green:#16a34a; --yellow:#ca8a04; --red:#dc2626; --border:#e2e8f0; --purple:#7c3aed;
+    --shadow:0 1px 2px rgba(15,23,42,.05);
+    --sidebar-w:226px; --sidebar-bg:#111d45; --sidebar-bg2:#22346f; --sidebar-text:#a7b1d6; --sidebar-border:rgba(255,255,255,.08);
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);}
+
+  .app-shell{display:flex;min-height:100vh;}
+
+  .sidebar{position:fixed;top:0;left:0;bottom:0;width:var(--sidebar-w);background:var(--sidebar-bg);
+    display:flex;flex-direction:column;padding:18px 12px 20px;overflow-y:auto;z-index:20;}
+  .sidebar-logo{display:flex;align-items:center;padding:4px 8px 20px;border-bottom:1px solid var(--sidebar-border);margin-bottom:10px;}
+  .sidebar-logo img{height:76px;width:auto;display:block;}
+  .sidebar-section{color:#5b6aa3;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin:14px 10px 8px;}
+  .sidebar nav{display:flex;flex-direction:column;gap:2px;padding:0;border:none;position:static;}
+  .sidebar nav button{display:flex;align-items:center;gap:10px;width:100%;text-align:left;
+    background:none;border:none;border-bottom:none;color:var(--sidebar-text);
+    padding:10px 12px;border-radius:9px;font-size:13.5px;cursor:pointer;}
+  .sidebar nav button .ic{font-size:15px;width:18px;text-align:center;flex-shrink:0;}
+  .sidebar nav button:hover{background:rgba(255,255,255,.06);color:#fff;}
+  .sidebar nav button.active{background:var(--sidebar-bg2);color:#fff;font-weight:600;}
+
+  .main-wrap{margin-left:var(--sidebar-w);flex:1;min-width:0;}
+
+  header{padding:20px 28px;border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--bg);z-index:10;}
+  header h1{margin:0 0 4px;font-size:20px;color:var(--text);}
+  header p{margin:0;color:var(--muted);font-size:13px;}
+
+  main{padding:22px 28px 60px;}
+  .tab{display:none;}
+  .tab.active{display:block;}
+  .stats{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:18px;}
+  .stat{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 18px;min-width:150px;box-shadow:var(--shadow);}
+  .stat .n{font-size:22px;font-weight:700;color:var(--text);}
+  .stat .l{font-size:12px;color:var(--muted);}
+  /* Vendido na semana em destaque - Felipe pediu pra chamar mais atencao
+     nesse numero especifico dentro do bloco de vendas semanais. Verde neon
+     a pedido dele (nao e' o azul --accent usado no resto do painel). */
+  .stat.destaque{border-color:#1db954;background:#39ff14;}
+  .stat.destaque .n{color:#052e12;font-size:26px;}
+  .stat.destaque .l{color:#0a3d1a;}
+  /* Card clicavel com o total (base inteira, nao so' da semana) parado no
+     financeiro - Felipe pediu em vermelho, bem destacado, que abre a lista
+     completa de pedidos presos ao clicar. */
+  .stat.alerta{border-color:#dc2626;background:#fee2e2;cursor:pointer;transition:filter .15s;}
+  .stat.alerta:hover{filter:brightness(0.96);}
+  .stat.alerta .n{color:#991b1b;font-size:26px;}
+  .stat.alerta .l{color:#b91c1c;}
+  /* Faixa de comissao prevista: separada da venda semanal de proposito (Felipe
+     pediu pra nao confundir as duas coisas), menor, no topo, e SEM quebra de
+     linha - todos os meses cabem numa unica fileira (com scroll horizontal
+     como fallback se a janela for estreita, em vez de quebrar pra 2a linha). */
+  .comissao-bloco{margin-bottom:16px;}
+  .comissao-titulo{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px;font-weight:600;}
+  /* flex:1 1 0 + min-width:0 faz os 6 cards DIVIDIREM o espaco disponivel e
+     encolherem juntos em telas estreitas, em vez de vazar pra scroll
+     horizontal (Felipe pediu explicitamente pra nao ter scrollbar aqui) -
+     o texto trunca com "..." no caso extremo de janela muito pequena, mas
+     a fileira nunca quebra nem estoura a largura. */
+  .comissao-strip{display:flex;gap:6px;flex-wrap:nowrap;width:100%;}
+  .comissao-pill{background:var(--card2);border:1px solid var(--border);border-radius:9px;padding:7px 8px;box-shadow:var(--shadow);flex:1 1 0;min-width:0;overflow:hidden;}
+  .comissao-pill .n{font-size:clamp(10.5px,1.5vw,14px);font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .comissao-pill .l{font-size:clamp(8.5px,1.1vw,10px);color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .comissao-pill.atual{border-color:var(--accent);background:#eff6ff;}
+  .comissao-pill.atual .n{color:var(--accent);}
+  .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px;}
+  input[type=text]{padding:8px 12px;border-radius:8px;border:1px solid var(--border);background:#fff;color:var(--text);font-size:13px;min-width:260px;}
+  select{padding:8px 12px;border-radius:8px;border:1px solid var(--border);background:#fff;color:var(--text);font-size:13px;}
+  input[type=date]{padding:8px 12px;border-radius:8px;border:1px solid var(--border);background:#fff;color:var(--text);font-size:13px;}
+  .periodo-grupo{display:flex;gap:6px;align-items:center;}
+  .periodo-grupo .sep{color:var(--muted);font-size:12.5px;}
+  .btn-limpar-periodo{padding:8px 10px;border-radius:8px;border:1px solid var(--border);background:#fff;color:var(--muted);font-size:12.5px;cursor:pointer;}
+  .btn-limpar-periodo:hover{background:var(--card2);color:var(--text);}
+  .btn-aplicar-periodo{padding:8px 14px;border-radius:8px;border:1px solid var(--accent);background:var(--accent);color:#fff;font-size:12.5px;font-weight:600;cursor:pointer;}
+  .btn-aplicar-periodo:hover{filter:brightness(1.08);}
+  .table-wrap{overflow-x:auto;border-radius:12px;border:1px solid var(--border);background:var(--card);box-shadow:var(--shadow);}
+  table{width:100%;border-collapse:collapse;font-size:12.5px;background:var(--card);}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--border);white-space:nowrap;}
+  td.wrap,th.wrap{white-space:normal;}
+  /* Tabela de clientes: layout fixo com larguras em % pra caber na tela
+     sem rolagem horizontal, mesmo com mais colunas. */
+  #tbl-clientes{table-layout:fixed;}
+  #tbl-clientes th,#tbl-clientes td{white-space:normal;overflow:hidden;text-overflow:ellipsis;word-break:break-word;}
+  #tbl-clientes th:nth-child(1),#tbl-clientes td:nth-child(1){width:19%;}
+  #tbl-clientes th:nth-child(2),#tbl-clientes td:nth-child(2){width:9%;}
+  #tbl-clientes th:nth-child(3),#tbl-clientes td:nth-child(3){width:11%;}
+  #tbl-clientes th:nth-child(4),#tbl-clientes td:nth-child(4){width:9%;}
+  #tbl-clientes th:nth-child(5),#tbl-clientes td:nth-child(5){width:14%;}
+  #tbl-clientes th:nth-child(6),#tbl-clientes td:nth-child(6){width:8%;}
+  #tbl-clientes th:nth-child(7),#tbl-clientes td:nth-child(7){width:15%;}
+  #tbl-clientes th:nth-child(8),#tbl-clientes td:nth-child(8){width:15%;}
+  #tbl-clientes td:nth-child(1) b{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  #tbl-clientes td:nth-child(1) .muted{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  th{background:var(--card2);color:var(--muted);font-weight:600;cursor:pointer;user-select:none;position:sticky;top:0;}
+  tr:hover td{background:#f8fafc;}
+  .badge{padding:3px 9px;border-radius:20px;font-size:11px;font-weight:600;display:inline-block;white-space:nowrap;}
+  .badge.ok{background:#dcfce7;color:#166534;}
+  .badge.atencao{background:#fef3c7;color:#92400e;}
+  .badge.critico{background:#fee2e2;color:#991b1b;}
+  .badge.sem_registro{background:#f1f5f9;color:#475569;}
+  .pos-EXPEDIDO{background:#dcfce7;color:#166534;}
+  .pos-EM-EXPEDICAO{background:#ccfbf1;color:#0f766e;}
+  .pos-EM-SEPARACAO{background:#dbeafe;color:#1d4ed8;}
+  .pos-DEPOSITO{background:#ede9fe;color:#6d28d9;}
+  .pos-ATENDIMENTO{background:#f1f5f9;color:#334155;}
+  .pos-COMERCIAL{background:#fef3c7;color:#92400e;}
+  .pos-COMERCIAL-FINANCEIRO{background:#ffedd5;color:#9a3412;}
+  .pos-FINANCEIRO{background:#ffedd5;color:#9a3412;}
+  .pos-FATURADO{background:#cffafe;color:#155e75;}
+  .pos-PEDIDO-CANCELADO{background:#fee2e2;color:#991b1b;}
+  .muted{color:var(--muted);}
+  .plist{font-size:12px;color:var(--muted);max-width:260px;white-space:normal;}
+  .card-note{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 18px;margin-bottom:16px;font-size:13px;color:var(--muted);box-shadow:var(--shadow);}
+  .count{font-size:12px;color:var(--muted);margin-bottom:8px;}
+  .semana-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;}
+  @media(max-width:900px){.semana-grid{grid-template-columns:repeat(auto-fit,minmax(110px,1fr));}}
+  .dia-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px 10px;text-align:center;box-shadow:var(--shadow);}
+  .dia-card.hoje{border-color:var(--accent);background:#eff6ff;}
+  .dia-nome{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;}
+  .dia-data{font-size:12px;color:var(--muted);margin-bottom:10px;}
+  .dia-qtde{font-size:28px;font-weight:700;color:var(--text);}
+  .dia-label{font-size:11px;color:var(--muted);margin-bottom:8px;}
+  .dia-valor{font-size:13px;font-weight:600;color:#16a34a;}
+  .dia-pendencias{display:flex;gap:4px;justify-content:center;margin-top:10px;flex-wrap:wrap;}
+  .pend-badge{font-size:10px;font-weight:700;padding:3px 7px;border-radius:20px;border:1px solid var(--border);background:#f8fafc;color:#94a3b8;}
+  .pend-badge.tem{cursor:pointer;}
+  .pend-badge.tem:hover{filter:brightness(.96);}
+  .pend-badge.atendimento.tem{background:#f1f5f9;color:#334155;border-color:#cbd5e1;}
+  .pend-badge.comercial.tem{background:#fef3c7;color:#92400e;border-color:#fcd34d;}
+  .pend-badge.financeiro.tem{background:#ffedd5;color:#9a3412;border-color:#fdba74;}
+  .modal-overlay{display:none;position:fixed;inset:0;background:rgba(15,23,42,.55);z-index:50;align-items:center;justify-content:center;padding:20px;}
+  .modal-overlay.aberto{display:flex;}
+  .modal-box{background:var(--card);border:1px solid var(--border);border-radius:14px;max-width:640px;width:100%;max-height:80vh;display:flex;flex-direction:column;box-shadow:0 24px 48px rgba(15,23,42,.18);}
+  .modal-head{padding:16px 20px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;}
+  .modal-head h3{margin:0;font-size:15px;}
+  .modal-close{background:none;border:none;color:var(--muted);font-size:22px;cursor:pointer;line-height:1;}
+  .modal-body{padding:6px 20px;overflow-y:auto;}
+  .modal-item{padding:10px 0;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;gap:12px;align-items:center;}
+  .modal-item:last-child{border-bottom:none;}
+  .modal-item .info b{display:block;font-size:13.5px;}
+  .modal-item .info span{font-size:12px;color:var(--muted);}
+  .modal-item .valor{font-size:13px;font-weight:700;color:#16a34a;white-space:nowrap;}
+  .modal-box.grande{max-width:920px;}
+  #tbl-clientes tbody tr{cursor:pointer;}
+  .ficha-grid{display:grid;grid-template-columns:1fr 300px;}
+  @media(max-width:760px){.ficha-grid{grid-template-columns:1fr;}}
+  .ficha-col{padding:18px 20px;}
+  .ficha-col + .ficha-col{border-left:1px solid var(--border);background:var(--card2);}
+  .ficha-nome{font-size:18px;font-weight:700;margin:0 0 14px;color:var(--text);}
+  .ficha-linha{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--border);font-size:13px;}
+  .ficha-linha:last-child{border-bottom:none;}
+  .ficha-linha .ic{width:20px;text-align:center;flex-shrink:0;}
+  .ficha-linha a{color:var(--accent);text-decoration:none;}
+  .ficha-linha a:hover{text-decoration:underline;}
+  .ficha-resumo-titulo{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-bottom:14px;}
+  .ficha-resumo-item{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--border);}
+  .ficha-resumo-item:last-child{border-bottom:none;}
+  .ficha-resumo-item .ic{font-size:18px;width:24px;text-align:center;flex-shrink:0;}
+  .ficha-resumo-item .n{font-size:15px;font-weight:700;color:var(--text);}
+  .ficha-resumo-item .l{font-size:11px;color:var(--muted);}
+  .indicador-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin-top:16px;box-shadow:var(--shadow);}
+  .indicador-titulo{font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--muted);margin-bottom:14px;text-transform:uppercase;}
+  .indicador-titulo .sub{font-weight:400;font-size:11px;text-transform:none;letter-spacing:0;}
+  .indicador-body{display:flex;gap:20px;flex-wrap:wrap;}
+  .indicador-grafico{flex:1;min-width:280px;height:260px;position:relative;}
+  .indicador-side{width:200px;display:flex;flex-direction:column;gap:14px;}
+  .indicador-side .box .l{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;}
+  .indicador-side .box .n{font-size:19px;font-weight:700;margin-top:2px;color:var(--text);}
+  .indicador-side .box .sub{font-size:12px;color:var(--muted);margin-top:2px;}
+
+  @media(max-width:780px){
+    :root{--sidebar-w:60px;}
+    .sidebar{padding:14px 8px;}
+    .sidebar-logo{justify-content:center;padding:4px 0 16px;}
+    .sidebar-logo img{height:38px;}
+    .sidebar-section{display:none;}
+    .sidebar nav button{justify-content:center;padding:12px 0;}
+    .sidebar nav button .label{display:none;}
+  }
+
+</style>
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <img src="data:image/png;base64,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" alt="Isapa Bike">
+  </div>
+  <div class="sidebar-section">Principal</div>
+  <nav>
+    <button class="tablink active" data-tab="semana"><span class="ic">📊</span><span class="label">Análise Semanal</span></button>
+    <button class="tablink" data-tab="clientes"><span class="ic">👥</span><span class="label">Clientes</span></button>
+    <button class="tablink" data-tab="pedidos"><span class="ic">📦</span><span class="label">Pedidos (posição)</span></button>
+  </nav>
+  <div class="sidebar-section">Gestão</div>
+  <nav>
+    <button class="tablink" data-tab="produtos"><span class="ic">⭐</span><span class="label">Produtos mais vendidos</span></button>
+    <button class="tablink" data-tab="produtos-tabela"><span class="ic">🏷️</span><span class="label">Produtos</span></button>
+    <button class="tablink" data-tab="novidades"><span class="ic">🆕</span><span class="label">Novidades</span></button>
+  </nav>
+</aside>
+<div class="main-wrap">
+<header>
+  <h1>CRM Isapa Bike</h1>
+  <p>Gerado a partir do banco local do MEX3000 (SFA.DB) em <span id="gerado-em">-</span> — base completa</p>
+</header>
+
+<main>
+
+  <section id="tab-semana" class="tab active">
+    <div class="comissao-bloco">
+      <div class="comissao-titulo">Comissão prevista <span id="comissao-pct-nota"></span></div>
+      <div class="comissao-strip" id="comissao-strip"></div>
+    </div>
+
+    <div class="stats" id="stats-semana"></div>
+    <div class="semana-grid" id="semana-grid"></div>
+
+    <div class="indicador-card">
+      <div class="indicador-titulo">Evolução do Faturamento <span class="sub">— só pedidos com status EXPEDIDO</span></div>
+      <div class="indicador-body">
+        <div class="indicador-grafico"><canvas id="chart-faturamento"></canvas></div>
+        <div class="indicador-side" id="side-faturamento"></div>
+      </div>
+    </div>
+
+    <div class="indicador-card">
+      <div class="indicador-titulo">Evolução de Venda <span class="sub">— todos os pedidos do mês, exceto cancelados</span></div>
+      <div class="indicador-body">
+        <div class="indicador-grafico"><canvas id="chart-venda"></canvas></div>
+        <div class="indicador-side" id="side-venda"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tab-clientes" class="tab">
+    <div id="resumo-edi-geral"></div>
+    <div class="stats" id="stats-clientes"></div>
+    <div class="controls">
+      <input type="text" id="filtro-clientes" placeholder="Buscar por nome, cidade...">
+      <select id="filtro-status">
+        <option value="">Todas as situações</option>
+        <option value="critico">Crítico (&gt;30 dias)</option>
+        <option value="atencao">Atenção (15-30 dias)</option>
+        <option value="ok">Em dia (&le;15 dias)</option>
+        <option value="sem_registro">Sem pedido/visita registrada</option>
+      </select>
+    </div>
+    <div class="count" id="count-clientes"></div>
+    <div class="table-wrap">
+    <table id="tbl-clientes">
+      <thead><tr>
+        <th data-k="nome">Razão social</th>
+        <th data-k="_posicao_num">Posição no nosso faturamento</th>
+        <th data-k="_edi_faturado2025">Faturamento EDI (ano anterior)</th>
+        <th data-k="_edi_faturado2026">Faturamento EDI</th>
+        <th data-k="_edi_variacao">Crescimento ou queda</th>
+        <th data-k="dias_atraso_titulos">Títulos vencidos</th>
+        <th data-k="dias_sem_pedido">Dias sem compra</th>
+        <th data-k="cidade">Cidade</th>
+        <th data-k="condicao_pagamento">Prazo de pagamento</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+    </div>
+  </section>
+
+  <section id="tab-pedidos" class="tab">
+    <div class="stats" id="stats-pedidos"></div>
+    <div class="controls">
+      <input type="text" id="filtro-pedidos" placeholder="Buscar por cliente ou nº do pedido...">
+      <select id="filtro-posicao"><option value="">Todas as posições</option></select>
+      <div class="periodo-grupo">
+        <input type="date" id="filtro-data-de" title="Data inicial">
+        <span class="sep">até</span>
+        <input type="date" id="filtro-data-ate" title="Data final">
+        <button type="button" class="btn-aplicar-periodo" id="btn-aplicar-periodo">Aplicar</button>
+        <button type="button" class="btn-limpar-periodo" id="btn-limpar-periodo">Limpar período</button>
+      </div>
+    </div>
+    <div class="count" id="count-pedidos"></div>
+    <div class="table-wrap">
+    <table id="tbl-pedidos">
+      <thead><tr>
+        <th data-k="cod_ped">Pedido</th><th data-k="nome_cliente">Cliente</th>
+        <th data-k="data_emissao">Emitido em</th><th data-k="valor">Valor (R$)</th>
+        <th data-k="posicao">Posição atual</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+    </div>
+  </section>
+
+  <section id="tab-produtos" class="tab">
+    <div class="card-note">Top 50 produtos por valor faturado, com base nos itens de pedido cujo produto foi identificado no catálogo disponível localmente.</div>
+    <div class="table-wrap">
+    <table id="tbl-produtos">
+      <thead><tr>
+        <th data-k="descricao">Produto</th><th data-k="cod_prod">Código</th><th data-k="qtde">Qtde vendida</th>
+        <th data-k="valor">Valor faturado (R$)</th><th data-k="preco_atual">Preço atual (R$)</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+    </div>
+  </section>
+
+  <section id="tab-produtos-tabela" class="tab">
+    <div class="stats" id="stats-produtos-tabela"></div>
+    <div class="card-note">Estoque nas 3 filiais usadas para clientes de Santa Catarina: SC (filial 06), SP (filial 02) e ES (filial 03).</div>
+    <input type="text" id="filtro-produtos-tabela" placeholder="Buscar por nome ou código do produto...">
+    <div class="count" id="count-produtos-tabela"></div>
+    <div class="table-wrap">
+    <table id="tbl-produtos-tabela">
+      <thead><tr>
+        <th data-k="cod_prod">Código</th><th data-k="descricao">Descrição</th>
+        <th data-k="preco">Valor tabela à vista (R$)</th>
+        <th data-k="estoque_sc">SC (filial 06)</th><th data-k="estoque_sp">SP (filial 02)</th>
+        <th data-k="estoque_es">ES (filial 03)</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+    </div>
+  </section>
+
+  <section id="tab-novidades" class="tab">
+    <div class="card-note" id="novidades-nota">Produtos que ganharam estoque em Santa Catarina (filial 06) nos últimos 10 dias, ou seja, que estavam com estoque zerado na última comparação e agora aparecem com estoque disponível. Análise válida apenas para o estoque de Santa Catarina.</div>
+    <input type="text" id="filtro-novidades" placeholder="Buscar por nome ou código do produto...">
+    <div class="count" id="count-novidades"></div>
+    <div class="table-wrap">
+    <table id="tbl-novidades">
+      <thead><tr>
+        <th data-k="cod_prod">Código</th><th data-k="descricao">Descrição</th><th data-k="estoque_sc">Estoque SC</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+    </div>
+  </section>
+
+</main>
+</div>
+</div>
+
+<div class="modal-overlay" id="modal-pendencias">
+  <div class="modal-box">
+    <div class="modal-head">
+      <h3 id="modal-titulo">Pedidos</h3>
+      <button class="modal-close" id="modal-fechar">&times;</button>
+    </div>
+    <div class="modal-body" id="modal-corpo"></div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-cliente">
+  <div class="modal-box grande">
+    <div class="modal-head">
+      <h3>Ficha do cliente</h3>
+      <button class="modal-close" id="modal-cliente-fechar">&times;</button>
+    </div>
+    <div class="modal-body" id="modal-cliente-corpo" style="padding:0;"></div>
+  </div>
+</div>
+
+<script id="data-json" type="application/json">__DATA_JSON__</script>
+<script>
+const DATA = JSON.parse(document.getElementById('data-json').textContent);
+const STATUS_LABEL = {ok:'em dia', atencao:'atenção', critico:'crítico', sem_registro:'sem registro'};
+
+function fmtMoney(v){ return v==null ? '-' : Number(v).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}); }
+function fmtDate(v){
+  if(!v) return '-';
+  const datePart = v.split('T')[0].split(' ')[0];
+  const m = datePart.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if(!m) return datePart;
+  return `${m[3]}/${m[2]}/${m[1]}`;
+}
+function posClass(p){ return 'pos-' + (p||'').replaceAll('/','-').replaceAll(' ','-'); }
+
+if (DATA.gerado_em_hora) {
+  document.getElementById('gerado-em').textContent = new Date(DATA.gerado_em_hora).toLocaleString('pt-BR');
+}
+
+document.querySelectorAll('.tablink').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('.tablink').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-'+btn.dataset.tab).classList.add('active');
+  });
+});
+
+function sortable(tableId, data, renderRow, onRender){
+  let sortKey=null, asc=true;
+  // currentData guarda o conjunto atualmente exibido (apos filtros externos
+  // via pedidosRender/etc) - antes o clique no cabecalho reordenava sempre
+  // a partir do array ORIGINAL completo (a variavel "data" capturada aqui
+  // na criacao), entao um clique pra ordenar por preco, por exemplo,
+  // derrubava qualquer filtro de data/busca ja aplicado e voltava a
+  // mostrar tudo. Agora ele ordena o que esta na tela, nao o total.
+  let currentData = data;
+  const table = document.getElementById(tableId);
+  const tbody = table.querySelector('tbody');
+  function render(rows){
+    currentData = rows;
+    tbody.innerHTML = rows.map(renderRow).join('');
+    if(onRender) onRender(rows.length);
+  }
+  render(data);
+  table.querySelectorAll('th[data-k]').forEach(th=>{
+    th.addEventListener('click', ()=>{
+      const k = th.dataset.k;
+      asc = (sortKey===k) ? !asc : true;
+      sortKey = k;
+      const sorted = [...currentData].sort((a,b)=>{
+        let va=a[k], vb=b[k];
+        if(va==null) va = asc? Infinity : -Infinity;
+        if(vb==null) vb = asc? Infinity : -Infinity;
+        if(typeof va === 'string') return asc ? String(va).localeCompare(vb) : String(vb).localeCompare(va);
+        return asc ? va-vb : vb-va;
+      });
+      render(sorted);
+    });
+  });
+  return render;
+}
+
+// --- Analise Semanal (segunda a domingo da semana atual) ---
+function pad2(n){ return String(n).padStart(2,'0'); }
+function toISO(d){ return d.getFullYear()+'-'+pad2(d.getMonth()+1)+'-'+pad2(d.getDate()); }
+
+// Etapas do pedido antes de virar faturamento de verdade (EXPEDIDO). So'
+// mostramos os indicadores de Atendimento e Financeiro (Comercial fica
+// escondido, mas pedido "COMERCIAL/FINANCEIRO" continua contando pro
+// indicador de Financeiro, ja que ele tambem esta parado la).
+const STATUS_PEND = [
+  { chave: 'ATENDIMENTO', label: 'Atend.', classe: 'atendimento' },
+  { chave: 'FINANCEIRO', label: 'Fin.', classe: 'financeiro' },
+];
+
+function abrirModalPendencias(lista, titulo){
+  document.getElementById('modal-titulo').textContent = `${titulo} (${lista.length})`;
+  document.getElementById('modal-corpo').innerHTML = lista.length ? lista.map(p => `
+    <div class="modal-item">
+      <div class="info">
+        <b>${p.nome_cliente || '(cliente ' + p.cod_cli + ')'}</b>
+        <span>Pedido nº ${p.cod_ped}${p.pedido_cliente_ref ? ' · Ref. cliente: ' + p.pedido_cliente_ref : ''} · ${fmtDate(p.data_emissao)}</span>
+      </div>
+      <div class="valor">${fmtMoney(p.valor)}</div>
+    </div>
+  `).join('') : '<div class="muted" style="padding:20px 0;text-align:center;">Nenhum pedido.</div>';
+  document.getElementById('modal-pendencias').classList.add('aberto');
+}
+document.getElementById('modal-fechar').addEventListener('click', () => {
+  document.getElementById('modal-pendencias').classList.remove('aberto');
+});
+document.getElementById('modal-pendencias').addEventListener('click', (e) => {
+  if (e.target.id === 'modal-pendencias') e.currentTarget.classList.remove('aberto');
+});
+
+(function montarSemana(){
+  const hoje = new Date();
+  const diaSemanaJs = hoje.getDay(); // 0=domingo ... 6=sabado
+  const offsetSegunda = (diaSemanaJs === 0) ? -6 : (1 - diaSemanaJs);
+  const segunda = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() + offsetSegunda);
+
+  const NOMES_DIA = ['Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'];
+  const hojeIso = toISO(hoje);
+
+  const dias = [];
+  for(let i=0;i<7;i++){
+    const d = new Date(segunda.getFullYear(), segunda.getMonth(), segunda.getDate()+i);
+    const iso = toISO(d);
+    const doDia = DATA.pedidos.filter(p => (p.data_emissao||'').slice(0,10) === iso);
+    const valor = doDia.reduce((s,p)=>s+(p.valor||0),0);
+    const pendencias = {
+      ATENDIMENTO: doDia.filter(p => p.posicao === 'ATENDIMENTO'),
+      COMERCIAL: doDia.filter(p => p.posicao === 'COMERCIAL' || p.posicao === 'COMERCIAL/FINANCEIRO'),
+      FINANCEIRO: doDia.filter(p => p.posicao === 'FINANCEIRO' || p.posicao === 'COMERCIAL/FINANCEIRO'),
+    };
+    dias.push({ nome: NOMES_DIA[i], data: d, iso, qtde: doDia.length, valor, pendencias });
+  }
+
+  function badgesHtml(dia){
+    return STATUS_PEND.map(s => {
+      const n = dia.pendencias[s.chave].length;
+      const tem = n > 0 ? 'tem' : '';
+      const attrs = n > 0 ? `data-iso="${dia.iso}" data-status="${s.chave}"` : '';
+      return `<span class="pend-badge ${s.classe} ${tem}" ${attrs}>${s.label} ${n}</span>`;
+    }).join('');
+  }
+
+  document.getElementById('semana-grid').innerHTML = dias.map(dia => `
+    <div class="dia-card ${dia.iso===hojeIso?'hoje':''}">
+      <div class="dia-nome">${dia.nome}</div>
+      <div class="dia-data">${pad2(dia.data.getDate())}/${pad2(dia.data.getMonth()+1)}</div>
+      <div class="dia-qtde">${dia.qtde}</div>
+      <div class="dia-label">pedido${dia.qtde===1?'':'s'}</div>
+      <div class="dia-valor">${fmtMoney(dia.valor)}</div>
+      <div class="dia-pendencias">${badgesHtml(dia)}</div>
+    </div>
+  `).join('');
+
+  document.getElementById('semana-grid').addEventListener('click', (e) => {
+    const el = e.target.closest('.pend-badge.tem');
+    if (!el) return;
+    const dia = dias.find(d => d.iso === el.dataset.iso);
+    const status = STATUS_PEND.find(s => s.chave === el.dataset.status);
+    const lista = dia.pendencias[status.chave];
+    abrirModalPendencias(lista, `${status.label.replace('.', '')} — ${dia.nome} ${pad2(dia.data.getDate())}/${pad2(dia.data.getMonth()+1)}`);
+  });
+
+  const totalQtde = dias.reduce((s,d)=>s+d.qtde,0);
+  const totalValor = dias.reduce((s,d)=>s+d.valor,0);
+
+  // Previsao de comissao: o Felipe recebe em um mes a comissao sobre os
+  // titulos que venceram no mes anterior (ex: titulos de agosto x 2,3% =
+  // comissao recebida em setembro). Vem pronta do sync
+  // (DATA.comissao_prevista) - o painel so' exibe.
+  //
+  // Fica numa faixa PROPRIA, separada da venda semanal (o Felipe reclamou que
+  // as duas coisas se confundiam), menor e no topo da pagina, numa linha so'
+  // (sem quebrar pra 2a fileira - com scroll horizontal como fallback).
+  const comissaoHtml = (DATA.comissao_prevista || []).map((m, i) => `
+    <div class="comissao-pill ${i===0?'atual':''}">
+      <div class="n">R$ ${fmtMoney(m.comissao)}</div>
+      <div class="l">${m.mes_recebimento_label} · tít. ${m.mes_vencimento_label}</div>
+    </div>
+  `).join('');
+  document.getElementById('comissao-strip').innerHTML = comissaoHtml;
+
+  // Total parado no Financeiro - base INTEIRA, nao so' a semana atual (por
+  // isso calculado direto em cima de DATA.pedidos, sem passar pelo array
+  // "dias" que so' cobre a semana). Mesma regra de classificacao usada nos
+  // badges "Fin." por dia (linha ~463): conta FINANCEIRO e o composto
+  // COMERCIAL/FINANCEIRO, ja que ele tambem esta parado la.
+  const stuckFinanceiro = DATA.pedidos.filter(p => p.posicao === 'FINANCEIRO' || p.posicao === 'COMERCIAL/FINANCEIRO');
+  const totalFinanceiro = stuckFinanceiro.reduce((s,p)=>s+(p.valor||0),0);
+
+  document.getElementById('stats-semana').innerHTML = `
+    <div class="stat"><div class="n">${totalQtde}</div><div class="l">pedidos esta semana</div></div>
+    <div class="stat destaque"><div class="n">${fmtMoney(totalValor)}</div><div class="l">vendido na semana (R$)</div></div>
+    <div class="stat alerta" id="btn-financeiro-total"><div class="n">${fmtMoney(totalFinanceiro)}</div><div class="l">parado no financeiro (base inteira) — ${stuckFinanceiro.length} pedidos</div></div>
+  `;
+  document.getElementById('btn-financeiro-total').addEventListener('click', () => {
+    abrirModalPendencias(stuckFinanceiro, 'Parado no Financeiro — base inteira');
+  });
+  if (DATA.comissao_percentual != null) {
+    const pct = (DATA.comissao_percentual * 100).toFixed(3).replace('.', ',').replace(/0+$/,'').replace(/,$/,'');
+    document.getElementById('comissao-pct-nota').textContent =
+      `(${pct}% sobre os títulos que vencem em cada mês, recebida no mês seguinte)`;
+  }
+})();
+
+// --- Indicadores mensais: Faturamento (so' EXPEDIDO) x Venda (todos, exceto cancelado) ---
+(function montarIndicadores(){
+  if (typeof Chart === 'undefined') return; // CDN do Chart.js falhou ao carregar - nao quebra o resto do painel
+
+  const hoje = new Date();
+  const ano = hoje.getFullYear(), mes = hoje.getMonth(); // mes: 0=jan..11=dez
+  const diaHoje = hoje.getDate();
+  const ultimoDia = new Date(ano, mes+1, 0).getDate();
+  const anoMesAtual = ano + '-' + pad2(mes+1);
+
+  const mesAnteriorMes = mes===0 ? 11 : mes-1;
+  const mesAnteriorAno = mes===0 ? ano-1 : ano;
+  const ultimoDiaMesAnterior = new Date(mesAnteriorAno, mesAnteriorMes+1, 0).getDate();
+  const anoMesAnterior = mesAnteriorAno + '-' + pad2(mesAnteriorMes+1);
+
+  function calcularSerie(anoMesAlvo, ultimoDiaAlvo, apenasExpedido){
+    const porDia = new Array(ultimoDiaAlvo+1).fill(0); // indices 1..ultimoDiaAlvo
+    let totalPedidos = 0;
+    (DATA.pedidos||[]).forEach(p=>{
+      const d = p.data_emissao||'';
+      if(d.slice(0,7) !== anoMesAlvo) return;
+      if(p.posicao === 'PEDIDO CANCELADO') return;
+      if(apenasExpedido && p.posicao !== 'EXPEDIDO') return;
+      const dia = parseInt(d.slice(8,10),10);
+      if(dia>=1 && dia<=ultimoDiaAlvo){ porDia[dia] += (p.valor||0); totalPedidos++; }
+    });
+    const cum = [];
+    let acc=0;
+    for(let i=1;i<=ultimoDiaAlvo;i++){ acc+=porDia[i]; cum.push(Math.round(acc*100)/100); }
+    return { porDia, cum, totalPedidos };
+  }
+
+  const NOME_DIA_1L = ['D','S','T','Q','Q','S','S']; // Date.getDay(): 0=domingo..6=sabado
+  const labelsDias = [];
+  for(let d=1; d<=ultimoDia; d++){
+    const dt = new Date(ano, mes, d);
+    labelsDias.push([pad2(d), NOME_DIA_1L[dt.getDay()]]);
+  }
+
+  function montarPainel(canvasId, sideId, titulo, apenasExpedido, cor, cotaMensal){
+    const atual = calcularSerie(anoMesAtual, ultimoDia, apenasExpedido);
+    const anterior = calcularSerie(anoMesAnterior, ultimoDiaMesAnterior, apenasExpedido);
+
+    const realSerie = atual.cum.map((v,idx)=> (idx+1<=diaHoje) ? v : null);
+    const mediaDiaria = diaHoje>0 ? atual.cum[diaHoje-1]/diaHoje : 0;
+    const projecaoSerie = atual.cum.map((v,idx)=>{
+      const dia = idx+1;
+      if(dia < diaHoje) return null;
+      if(dia === diaHoje) return atual.cum[diaHoje-1];
+      return Math.round(mediaDiaria*dia*100)/100;
+    });
+
+    const datasets = [
+      { label: titulo, data: realSerie, borderColor: cor, backgroundColor: cor+'26', fill:true, tension:.25, pointRadius:3, spanGaps:false },
+      { label: 'Previsão', data: projecaoSerie, borderColor: '#eab308', borderDash:[5,4], pointRadius:0, fill:false, tension:.25 },
+    ];
+    let mesPassadoSerie = null;
+    if(anterior.totalPedidos > 0){
+      mesPassadoSerie = labelsDias.map((_,idx)=>{
+        const dia = idx+1;
+        return dia<=ultimoDiaMesAnterior ? anterior.cum[dia-1] : null;
+      });
+      datasets.push({ label:'Mês passado', data: mesPassadoSerie, borderColor:'#94a3b8', borderDash:[3,3], pointRadius:0, fill:false, tension:.25 });
+    }
+
+    // Linha da cota: ritmo linear (reta) do 1o ao ultimo dia do mes, pra
+    // andar em paralelo com o realizado - se a linha verde estiver ACIMA da
+    // vermelha, esta batendo a cota; se estiver abaixo, esta atras do ritmo.
+    let cotaSerie = null;
+    if(cotaMensal){
+      cotaSerie = labelsDias.map((_,idx)=> Math.round(cotaMensal*(idx+1)/ultimoDia*100)/100);
+      datasets.push({ label:'Cota', data: cotaSerie, borderColor:'#dc2626', borderDash:[2,2], pointRadius:0, fill:false, tension:0 });
+    }
+
+    new Chart(document.getElementById(canvasId), {
+      type: 'line',
+      data: { labels: labelsDias, datasets },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        interaction: { mode:'index', intersect:false },
+        plugins: { legend: { labels: { color:'#94a3b8', font:{size:11} } } },
+        scales: {
+          x: { ticks:{ color:'#94a3b8', font:{size:10} }, grid:{ color:'#334155' } },
+          y: { ticks:{ color:'#94a3b8', callback: v => Number(v).toLocaleString('pt-BR') }, grid:{ color:'#334155' } },
+        },
+      },
+    });
+
+    const totalMes = atual.cum[diaHoje-1] || 0;
+    const hojeVal = atual.porDia[diaHoje] || 0;
+    const previstoFimMes = projecaoSerie[ultimoDia-1];
+    const mesmoPeriodoPassado = mesPassadoSerie ? mesPassadoSerie[Math.min(diaHoje, ultimoDiaMesAnterior)-1] : null;
+
+    let cotaHtml = '';
+    if(cotaMensal){
+      const cotaAteHoje = cotaSerie[diaHoje-1];
+      const pctCota = cotaMensal>0 ? (totalMes/cotaMensal*100) : 0;
+      const pctRitmo = cotaAteHoje>0 ? (totalMes/cotaAteHoje*100) : 0;
+      const corRitmo = pctRitmo>=100 ? '#16a34a' : '#dc2626';
+      cotaHtml = `
+        <div class="box"><div class="l">Cota do mês</div><div class="n">${fmtMoney(cotaMensal)}</div>
+          <div class="sub">${pctCota.toFixed(1).replace('.', ',')}% da cota atingido</div>
+        </div>
+        <div class="box"><div class="l">Ritmo vs. cota (até hoje)</div><div class="n" style="color:${corRitmo}">${pctRitmo.toFixed(1).replace('.', ',')}%</div>
+          <div class="sub">Devia estar em ${fmtMoney(cotaAteHoje)} até hoje</div>
+        </div>
+      `;
+    }
+
+    document.getElementById(sideId).innerHTML = `
+      <div class="box"><div class="l">${titulo} no mês</div><div class="n">${fmtMoney(totalMes)}</div><div class="sub">Hoje: ${fmtMoney(hojeVal)}</div></div>
+      <div class="box"><div class="l">Previsão fim do mês</div><div class="n">${fmtMoney(previstoFimMes)}</div></div>
+      ${mesmoPeriodoPassado!=null ? `<div class="box"><div class="l">Mesmo período, mês passado</div><div class="n">${fmtMoney(mesmoPeriodoPassado)}</div></div>` : ''}
+      ${cotaHtml}
+    `;
+  }
+
+  montarPainel('chart-faturamento', 'side-faturamento', 'Faturamento', true, '#22c55e', DATA.cota_mensal_faturamento);
+  montarPainel('chart-venda', 'side-venda', 'Venda', false, '#8b5cf6');
+})();
+
+// --- Clientes ---
+// Resumo geral oficial da carteira (cabecalho da aba), igual ao topo do
+// relatorio EDI: faturamento anual comparado e faturamento aberto por mes.
+if (DATA.edi && DATA.edi.resumo_geral) {
+  const rg = DATA.edi.resumo_geral;
+  const fm = rg.faturamento_mensal;
+  // So o acumulado Jan-Jul de 2025 x 2026 (comparavel mes a mes) - os totais
+  // de ano fechado (2023/2024/2025) saiam daqui por pedido do Felipe, porque
+  // comparar ano fechado com 2026 (ainda em andamento) confundia mais do que
+  // ajudava.
+  const anosHtml = `
+    <div class="stat">
+      <div class="n">${fmtMoney(fm.acumulado_2025)}</div>
+      <div class="l">Acumulado Jan-Jul 2025</div>
+    </div>
+    <div class="stat">
+      <div class="n">${fmtMoney(fm.acumulado_2026)}</div>
+      <div class="l">Acumulado Jan-Jul 2026 <span style="color:${fm.acumulado_variacao_pct<0?'#e5484d':'#3dd68c'};font-weight:700;">(${fm.acumulado_variacao_pct>0?'+':''}${String(fm.acumulado_variacao_pct).replace('.',',')}%)</span></div>
+    </div>
+  `;
+  const linhasMes = fm.meses.map((mes, i) => `
+    <tr>
+      <td>${mes}</td>
+      <td>${fmtMoney(fm['2025'][i])}</td>
+      <td>${fmtMoney(fm['2026'][i])}</td>
+      <td style="color:${fm.variacao_pct[i]<0?'#e5484d':'#3dd68c'};font-weight:700;">${fm.variacao_pct[i]>0?'+':''}${String(fm.variacao_pct[i]).replace('.',',')}%</td>
+    </tr>
+  `).join('');
+
+  document.getElementById('resumo-edi-geral').innerHTML = `
+    <div class="card-note" style="margin-bottom:14px;">Dados oficiais Isapa (EDI) — carteira completa do representante${DATA.edi.periodo_label ? ` — ${DATA.edi.periodo_label}` : ''}</div>
+    <div class="stats" style="margin-bottom:14px;">${anosHtml}</div>
+    <div class="table-wrap" style="margin-bottom:20px;max-width:720px;">
+      <table>
+        <thead><tr><th>Mês</th><th>2025</th><th>2026</th><th>Variação</th></tr></thead>
+        <tbody>
+          ${linhasMes}
+          <tr style="font-weight:700;">
+            <td>Acumulado</td>
+            <td>${fmtMoney(fm.acumulado_2025)}</td>
+            <td>${fmtMoney(fm.acumulado_2026)}</td>
+            <td style="color:${fm.acumulado_variacao_pct<0?'#e5484d':'#3dd68c'};">${fm.acumulado_variacao_pct>0?'+':''}${String(fm.acumulado_variacao_pct).replace('.',',')}%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
+// Pre-calcula ranking e faturamento oficial (EDI) de cada cliente/grupo pra
+// mostrar direto na tabela (sem precisar abrir a ficha). Guardado como campo
+// _edi_*/_posicao_* no proprio objeto do cliente pra dar pra ordenar a
+// coluna (o sortable() ordena por c[data-k] direto). Mesma logica de
+// ranking usada na ficha: prioriza o oficial do EDI, cai pro calculo local
+// (6 meses) quando o cliente esta fora da carteira coberta pelo EDI.
+const rankingLocal6Meses = rankingEntidades6Meses();
+DATA.clientes.forEach(c => {
+  const ent = entidadeDoCliente(c.cod_cli);
+  const oficial = dadosOficiaisEntidade(ent);
+  c._edi_variacao = oficial && oficial.variacao_pct != null ? oficial.variacao_pct : null;
+  c._edi_faturado2025 = oficial && oficial.faturado_2025 != null ? oficial.faturado_2025 : null;
+  if (oficial && oficial.faturado_2026 != null) {
+    // Tem dado oficial do EDI (mesmo que seja "sem faturamento" = 0).
+    c._edi_faturado2026 = oficial.faturado_2026;
+    c._faturado_fonte = 'oficial';
+  } else {
+    // Nao esta na carteira do EDI - usa o faturado calculado do banco
+    // local (SFA.DB) em vez de deixar "-".
+    c._edi_faturado2026 = valorHistoricoEntidade(ent);
+    c._faturado_fonte = 'local';
+  }
+  if (oficial && oficial.rank) {
+    c._posicao_num = oficial.rank;
+    c._posicao_fonte = 'oficial';
+  } else {
+    const idx = rankingLocal6Meses.indexOf(ent.chave);
+    c._posicao_num = idx >= 0 ? idx + 1 : null;
+    c._posicao_fonte = 'estimado';
+  }
+});
+
+function badgeVariacaoEdi(c){
+  if (c._edi_variacao == null) return '<span class="muted">-</span>';
+  const v = c._edi_variacao;
+  const cor = v < 0 ? '#e5484d' : '#3dd68c';
+  const seta = v < 0 ? '▼' : '▲';
+  const sinal = v > 0 ? '+' : '';
+  return `<span style="color:${cor};font-weight:700;white-space:nowrap;">${seta} ${sinal}${v.toFixed(1).replace('.', ',')}%</span>`;
+}
+
+function celulaPosicao(c){
+  if (c._posicao_num == null) return '<span class="muted">-</span>';
+  const sufixo = c._posicao_fonte === 'estimado' ? ' <span class="muted" style="font-size:11px;">(estimado)</span>' : '';
+  return `${c._posicao_num}º${sufixo}`;
+}
+
+// Junta os cadastros que fazem parte do mesmo GRUPO numa unica linha na
+// tabela (em vez de uma linha por CNPJ), com o nome do grupo (igual ao
+// EDI, ex: "GRUPO ROUPAS P/CICLISMO") e os cadastros que o compoem listados
+// embaixo. Cliente sem grupo continua uma linha normal. O cod_cli da linha
+// combinada e' o do cadastro mais ativo do grupo - a ficha (clique na
+// linha) ja soma o grupo inteiro de qualquer forma.
+function construirLinhasClientes(){
+  const porEntidade = new Map();
+  DATA.clientes.forEach(c => {
+    const ent = entidadeDoCliente(c.cod_cli);
+    if (!porEntidade.has(ent.chave)) porEntidade.set(ent.chave, { ent, membros: [] });
+    porEntidade.get(ent.chave).membros.push(c);
+  });
+  const linhas = [];
+  porEntidade.forEach(({ ent, membros }) => {
+    if (!ent.grupo) {
+      linhas.push(membros[0]);
+      return;
+    }
+    const ordenados = [...membros].sort((a, b) => (a.dias_sem_pedido ?? Infinity) - (b.dias_sem_pedido ?? Infinity));
+    const principal = ordenados[0];
+    const diasSemPedido = membros.reduce((min, m) => {
+      if (m.dias_sem_pedido == null) return min;
+      return (min == null || m.dias_sem_pedido < min) ? m.dias_sem_pedido : min;
+    }, null);
+    // Posicao financeira do grupo = soma do que todos os CNPJs do grupo
+    // devem (nao so' o "principal"), e o atraso e' o pior caso entre eles.
+    const valorTitulosVencidos = membros.reduce((soma, m) => soma + (m.valor_titulos_vencidos || 0), 0);
+    const diasAtrasoTitulos = membros.reduce((max, m) => Math.max(max, m.dias_atraso_titulos || 0), 0);
+    linhas.push({
+      ...principal,
+      nome: ent.grupo.nome,
+      nome_abrev: membros.map(m => m.nome_abrev || m.nome).join(', '),
+      dias_sem_pedido: diasSemPedido,
+      valor_titulos_vencidos: valorTitulosVencidos,
+      dias_atraso_titulos: diasAtrasoTitulos,
+    });
+  });
+  return linhas;
+}
+const linhasClientes = construirLinhasClientes();
+
+function celulaFinanceiro(c){
+  const valor = c.valor_titulos_vencidos || 0;
+  const atraso = c.dias_atraso_titulos || 0;
+  if (valor <= 0) return '<span class="muted">-</span>';
+  let html = `<span style="color:#dc2626;font-weight:700;">${fmtMoney(valor)}</span>`;
+  if (atraso > 0) {
+    html += `<div style="color:#dc2626;font-size:11px;font-weight:600;">${atraso} dia${atraso>1?'s':''} de atraso</div>`;
+  }
+  return html;
+}
+function rowCliente(c){
+  return `<tr data-cod="${c.cod_cli}">
+    <td title="${c.nome}"><b>${c.nome}</b>${c.nome_abrev && c.nome_abrev!==c.nome ? '<div class="muted">'+c.nome_abrev+'</div>' : ''}</td>
+    <td>${celulaPosicao(c)}</td>
+    <td>${c._edi_faturado2025 != null ? fmtMoney(c._edi_faturado2025) : '<span class="muted">-</span>'}</td>
+    <td>${c._edi_faturado2026 != null ? fmtMoney(c._edi_faturado2026) + (c._faturado_fonte === 'local' ? ' <span class="muted" style="font-size:11px;">(base local)</span>' : '') : '<span class="muted">-</span>'}</td>
+    <td>${badgeVariacaoEdi(c)}</td>
+    <td>${celulaFinanceiro(c)}</td>
+    <td>${c.dias_sem_pedido ?? '-'}</td>
+    <td>${c.cidade||'-'}</td>
+    <td>${c.condicao_pagamento||'-'}</td>
+  </tr>`;
+}
+const clientesRender = sortable('tbl-clientes', linhasClientes, rowCliente, n=>{
+  document.getElementById('count-clientes').textContent = n + ' clientes';
+});
+function applyFiltroClientes(){
+  const q = document.getElementById('filtro-clientes').value.toLowerCase();
+  const st = document.getElementById('filtro-status').value;
+  const filtered = linhasClientes.filter(c=>{
+    const matchQ = !q || (c.nome+' '+(c.cidade||'')).toLowerCase().includes(q);
+    const matchSt = !st || c.status === st;
+    return matchQ && matchSt;
+  });
+  clientesRender(filtered);
+}
+document.getElementById('filtro-clientes').addEventListener('input', applyFiltroClientes);
+document.getElementById('filtro-status').addEventListener('change', applyFiltroClientes);
+document.getElementById('stats-clientes').innerHTML = `
+  <div class="stat"><div class="n">${DATA.stats.n_clientes}</div><div class="l">clientes ativos</div></div>
+  <div class="stat" style="border-color:#7f1d1d"><div class="n" style="color:#fca5a5">${DATA.stats.n_critico}</div><div class="l">críticos (&gt;30 dias)</div></div>
+  <div class="stat" style="border-color:#713f12"><div class="n" style="color:#fde68a">${DATA.stats.n_atencao}</div><div class="l">atenção (15-30 dias)</div></div>
+  <div class="stat" style="border-color:#14532d"><div class="n" style="color:#86efac">${DATA.stats.n_ok}</div><div class="l">em dia (&le;15 dias)</div></div>
+  <div class="stat"><div class="n">${fmtMoney(DATA.stats.valor_total_historico)}</div><div class="l">valor histórico total (R$)</div></div>
+`;
+
+// --- Ficha do cliente (clique numa linha da tabela de Clientes) ---
+function seisMesesAtrasISO(){
+  const d = new Date();
+  d.setMonth(d.getMonth() - 6);
+  return toISO(d);
+}
+
+// Grupos de clientes: varios cadastros (CNPJs) do MEX3000 que na pratica sao
+// o mesmo cliente comprando por mais de uma razao social (ex: GRUPO BR
+// BALANCE). Vem em DATA.grupos, mantido a parte pelo Felipe (nao existe no
+// MEX3000 local). Quando um cliente faz parte de um grupo, o faturamento e
+// o ranking somam TODOS os CNPJs do grupo, nao so aquele cadastro.
+function grupoDoCliente(cod){
+  const lista = DATA.grupos || [];
+  return lista.find(g => (g.clientes||[]).some(c => Number(c.cod_cli) === Number(cod))) || null;
+}
+
+// "Entidade" = o que vamos tratar como 1 cliente pra fins de ranking/soma:
+// ou um grupo inteiro (varios cod_cli), ou um cliente avulso (1 cod_cli).
+function entidadeDoCliente(cod){
+  const g = grupoDoCliente(cod);
+  if (g) return { chave: 'G:' + g.nome, grupo: g, codigos: g.clientes.map(c => Number(c.cod_cli)) };
+  return { chave: 'C:' + cod, grupo: null, codigos: [Number(cod)] };
+}
+
+function statsUltimos6Meses(codigos){
+  const limite = seisMesesAtrasISO();
+  const set = new Set(codigos.map(Number));
+  const doEntidade = DATA.pedidos.filter(p => set.has(Number(p.cod_cli)) && (p.data_emissao||'').slice(0,10) >= limite);
+  const valor = doEntidade.reduce((s,p)=>s+(p.valor||0),0);
+  return { nPedidos: doEntidade.length, valor, ticketMedio: doEntidade.length ? valor/doEntidade.length : 0 };
+}
+
+// Ranking de entidades (grupos contam como 1 so) pelo valor comprado nos
+// ultimos 6 meses (maior pro menor).
+function rankingEntidades6Meses(){
+  const limite = seisMesesAtrasISO();
+  const porEntidade = {};
+  DATA.pedidos.forEach(p => {
+    if ((p.data_emissao||'').slice(0,10) < limite) return;
+    const ent = entidadeDoCliente(p.cod_cli);
+    porEntidade[ent.chave] = (porEntidade[ent.chave] || 0) + (p.valor || 0);
+  });
+  return Object.entries(porEntidade).sort((a,b) => b[1]-a[1]).map(([chave]) => chave);
+}
+
+function whatsappLink(tel){
+  if (!tel) return null;
+  let d = tel.replace(/\D/g, '');
+  if (!d) return null;
+  if (d.length <= 11) d = '55' + d; // sem DDI -> assume Brasil
+  return 'https://wa.me/' + d;
+}
+
+function enderecoLinhas(c){
+  const partes = [];
+  if (c.endereco) partes.push(c.endereco + (c.numero_end ? ', ' + c.numero_end : ''));
+  if (c.complemento_end) partes.push(c.complemento_end);
+  if (c.bairro) partes.push(c.bairro);
+  const linha2 = [c.cidade, c.estado].filter(Boolean).join(' - ');
+  if (linha2) partes.push(linha2);
+  if (c.cep) partes.push('CEP ' + c.cep);
+  return partes;
+}
+
+// Dados oficiais do relatorio EDI da Isapa (ranking/faturamento oficial),
+// complementa o calculo local que so enxerga o que esta no SFA.DB.
+// Faturamento local (soma de valor_total_historico do SFA.DB) pra quando o
+// cliente/grupo nao existe na carteira do EDI (fora da area do Rudimar,
+// cadastro novo, etc) - fallback pra nunca deixar "-" quando existe pelo
+// menos algum dado no banco local. Deixa claro na UI que essa fonte e'
+// diferente do EDI oficial (rotulo "(base local)").
+function valorHistoricoEntidade(ent){
+  let total = 0;
+  ent.codigos.forEach(cod => {
+    const c = DATA.clientes.find(cl => Number(cl.cod_cli) === Number(cod));
+    if (c) total += (c.valor_total_historico || 0);
+  });
+  return total;
+}
+
+function dadosOficiaisEntidade(ent){
+  const edi = DATA.edi;
+  if (!edi) return null;
+  if (ent.grupo) {
+    const g = (edi.por_grupo || {})[ent.grupo.nome];
+    return g || null;
+  }
+  const cod = ent.codigos[0];
+  const item = (edi.por_cliente || []).find(r => Number(r.cod_cli) === Number(cod));
+  if (item) return item;
+  if ((edi.sem_faturamento_2026_cod_cli || []).some(c => Number(c) === Number(cod))) {
+    return { faturado_2025: null, faturado_2026: 0, variacao_pct: null, rank: null, participacao_pct: null, semFaturamento: true };
+  }
+  return null;
+}
+
+function abrirFichaCliente(cod){
+  const c = DATA.clientes.find(cl => cl.cod_cli === cod);
+  if (!c) return;
+  const ent = entidadeDoCliente(cod);
+  const stats6m = statsUltimos6Meses(ent.codigos);
+  const oficial = dadosOficiaisEntidade(ent);
+  // Ranking: preferimos o oficial do EDI (cobre a carteira toda do
+  // representante, e' o que a Isapa usa de verdade). So caimos pro
+  // calculo local (6 meses de pedidos no SFA.DB) quando o EDI nao tem
+  // dado pra essa entidade (cliente fora da carteira do RUDIMAR, etc).
+  const ranking = rankingEntidades6Meses();
+  const posicaoLocal = ranking.indexOf(ent.chave);
+  const usaRankingOficial = !!(oficial && oficial.rank);
+  const telExibir = c.tel_celular || c.telefone;
+  const wpp = whatsappLink(telExibir);
+  const endLinhas = enderecoLinhas(c);
+  const enderecoBusca = endLinhas.join(', ');
+  const mapaUrl = enderecoBusca ? 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(enderecoBusca) : null;
+  const grupoHtml = ent.grupo ? `
+    <div class="ficha-linha" style="align-items:flex-start;">
+      <span class="ic">🔗</span>
+      <div>
+        Faz parte do <b>${ent.grupo.nome}</b> (${ent.grupo.clientes.length} cadastros)
+        <div class="muted" style="margin-top:4px;">${ent.grupo.clientes.map(cl => cl.razao).join(', ')}</div>
+      </div>
+    </div>` : '';
+  const resumoTitulo = ent.grupo ? `Resumo do grupo — últimos 6 meses` : `Resumo — últimos 6 meses`;
+  const posicao = usaRankingOficial ? (oficial.rank - 1) : posicaoLocal;
+  const rotuloRanking = usaRankingOficial
+    ? (ent.grupo ? 'grupo que mais compra (oficial Isapa)' : 'cliente que mais compra (oficial Isapa)')
+    : (ent.grupo ? 'grupo que mais compra (estimado, 6 meses)' : 'cliente que mais compra (estimado, 6 meses)');
+
+  const oficialHtml = oficial ? `
+    <div class="ficha-resumo-titulo" style="margin-top:20px;">Dados oficiais Isapa (EDI)${DATA.edi && DATA.edi.periodo_label ? ` — ${DATA.edi.periodo_label}` : ''}</div>
+    <div class="ficha-resumo-item"><span class="ic">📊</span><div><div class="n">${fmtMoney(oficial.faturado_2026||0)}</div><div class="l">faturado acumulado 2026</div></div></div>
+    ${oficial.variacao_pct != null ? `<div class="ficha-resumo-item"><span class="ic">${oficial.variacao_pct<0?'📉':'📈'}</span><div><div class="n" style="color:${oficial.variacao_pct<0?'#e5484d':'#3dd68c'}">${oficial.variacao_pct>0?'+':''}${oficial.variacao_pct.toFixed(1).replace('.',',')}%</div><div class="l">vs mesmo período 2025</div></div></div>` : ''}
+    ${oficial.participacao_pct != null ? `<div class="ficha-resumo-item"><span class="ic">🥧</span><div><div class="n">${String(oficial.participacao_pct).replace('.',',')}%</div><div class="l">de participação na carteira</div></div></div>` : ''}
+    ${(oficial.semFaturamento || oficial.faturado_2026 === 0) ? `<div class="ficha-resumo-item"><span class="ic">⚠️</span><div><div class="n" style="color:#e5484d">Sem faturamento</div><div class="l">em 2026 até o momento (dado oficial)</div></div></div>` : ''}
+  ` : `
+    <div class="ficha-resumo-titulo" style="margin-top:20px;">Faturamento — base local Isapa (SFA.DB)</div>
+    <div class="ficha-resumo-item"><span class="ic">🗄️</span><div><div class="n">${fmtMoney(valorHistoricoEntidade(ent))}</div><div class="l">valor histórico local${ent.grupo ? ' (soma do grupo)' : ''} — cliente fora da carteira do EDI</div></div></div>
+  `;
+
+  document.getElementById('modal-cliente-corpo').innerHTML = `
+    <div class="ficha-grid">
+      <div class="ficha-col">
+        <div class="ficha-nome">${c.nome || c.nome_abrev}</div>
+        ${grupoHtml}
+        ${c.cnpj ? `<div class="ficha-linha"><span class="ic">🏢</span><span>${c.cnpj}</span></div>` : ''}
+        ${telExibir ? `<div class="ficha-linha"><span class="ic">📞</span><span>${telExibir}</span>${wpp ? ` <a href="${wpp}" target="_blank" rel="noopener">WhatsApp</a>` : ''}</div>` : ''}
+        ${c.email ? `<div class="ficha-linha"><span class="ic">✉️</span><a href="mailto:${c.email}">${c.email}</a></div>` : ''}
+        ${endLinhas.length ? `<div class="ficha-linha" style="align-items:flex-start;"><span class="ic">📍</span><div>${endLinhas.join('<br>')}${mapaUrl ? `<br><a href="${mapaUrl}" target="_blank" rel="noopener">Visualizar mapa</a>` : ''}</div></div>` : ''}
+        ${c.condicao_pagamento ? `<div class="ficha-linha"><span class="ic">💳</span><span>Condição de pagamento: ${c.condicao_pagamento}</span></div>` : ''}
+      </div>
+      <div class="ficha-col">
+        <div class="ficha-resumo-titulo">${resumoTitulo}</div>
+        <div class="ficha-resumo-item"><span class="ic">🏆</span><div><div class="n">${posicao>=0 ? (posicao+1)+'º' : '-'}</div><div class="l">${rotuloRanking}</div></div></div>
+        <div class="ficha-resumo-item"><span class="ic">💰</span><div><div class="n">${fmtMoney(stats6m.valor)}</div><div class="l">em compras (R$)</div></div></div>
+        <div class="ficha-resumo-item"><span class="ic">📄</span><div><div class="n">${stats6m.nPedidos}</div><div class="l">pedidos realizados</div></div></div>
+        <div class="ficha-resumo-item"><span class="ic">🧮</span><div><div class="n">${fmtMoney(stats6m.ticketMedio)}</div><div class="l">de ticket médio (R$)</div></div></div>
+        <div class="ficha-resumo-item"><span class="ic">⏱️</span><div><div class="n">${c.dias_sem_pedido ?? '-'}</div><div class="l">dias sem comprar</div></div></div>
+        ${oficialHtml}
+      </div>
+    </div>
+  `;
+  document.getElementById('modal-cliente').classList.add('aberto');
+}
+
+document.querySelector('#tbl-clientes tbody').addEventListener('click', (e) => {
+  const tr = e.target.closest('tr[data-cod]');
+  if (!tr) return;
+  abrirFichaCliente(Number(tr.dataset.cod));
+});
+document.getElementById('modal-cliente-fechar').addEventListener('click', () => {
+  document.getElementById('modal-cliente').classList.remove('aberto');
+});
+document.getElementById('modal-cliente').addEventListener('click', (e) => {
+  if (e.target.id === 'modal-cliente') e.currentTarget.classList.remove('aberto');
+});
+
+// --- Pedidos (posição) ---
+// Pedido mais recente primeiro por padrao. data_inclusao tem hora real
+// (DATAEMISSAO so' tem a data), entao e' o criterio mais preciso pra saber
+// qual pedido foi enviado por ultimo - cai pro cod_ped se por algum motivo
+// faltar data_inclusao. Continua ordenavel clicando no cabecalho.
+//
+// BUG (02/09/2026): comparador antigo misturava dois criterios diferentes
+// por par (data_inclusao quando os dois lados tinham, cod_ped quando
+// faltava em qualquer um) - isso nao e' uma ordem total consistente e o
+// sort do JS pode embaralhar o resultado quando o array tem uma mistura
+// dos dois casos (historico antigo, de antes do campo data_inclusao
+// existir, nao tem o campo). Na pratica isso enterrava pedidos de HOJE
+// (ex: tipo Desktop, cod_ped na faixa ~1.0xx.xxx) no meio da lista, atras
+// de pedidos antigos com cod_ped maior (faixa ~4.8xx.xxx). Corrigido pra
+// cada item ter UMA unica chave de ordenacao (nunca misturando criterio
+// por par), com fallback em cascata: data_inclusao -> data_emissao ->
+// cod_ped so' como desempate final.
+DATA.pedidos.sort((a, b) => {
+  const ka = a.data_inclusao || a.data_emissao || '';
+  const kb = b.data_inclusao || b.data_emissao || '';
+  const cmp = kb.localeCompare(ka);
+  if (cmp !== 0) return cmp;
+  return (b.cod_ped||0) - (a.cod_ped||0);
+});
+function rowPedido(p){
+  return `<tr>
+    <td>${p.cod_ped}</td>
+    <td>${p.nome_cliente}</td>
+    <td>${fmtDate(p.data_emissao)}</td>
+    <td>${fmtMoney(p.valor)}</td>
+    <td><span class="badge ${posClass(p.posicao)}">${p.posicao}</span></td>
+  </tr>`;
+}
+const pedidosRender = sortable('tbl-pedidos', DATA.pedidos, rowPedido, n=>{
+  document.getElementById('count-pedidos').textContent = n + ' pedidos';
+});
+const posicoes = [...new Set(DATA.pedidos.map(p=>p.posicao))].sort();
+const selPos = document.getElementById('filtro-posicao');
+posicoes.forEach(p=>{
+  const opt = document.createElement('option');
+  opt.value = p; opt.textContent = p;
+  selPos.appendChild(opt);
+});
+const inputDataDe = document.getElementById('filtro-data-de');
+const inputDataAte = document.getElementById('filtro-data-ate');
+function applyFiltroPedidos(){
+  const q = document.getElementById('filtro-pedidos').value.toLowerCase();
+  const pos = selPos.value;
+  const dataDe = inputDataDe.value;   // "YYYY-MM-DD" ou ""
+  const dataAte = inputDataAte.value; // "YYYY-MM-DD" ou ""
+  const filtered = DATA.pedidos.filter(p=>{
+    const matchQ = !q || (p.nome_cliente+' '+p.cod_ped+' '+p.cod_cli).toLowerCase().includes(q);
+    const matchPos = !pos || p.posicao === pos;
+    const dEmissao = (p.data_emissao || '').slice(0,10);
+    const matchDataDe = !dataDe || (dEmissao && dEmissao >= dataDe);
+    const matchDataAte = !dataAte || (dEmissao && dEmissao <= dataAte);
+    return matchQ && matchPos && matchDataDe && matchDataAte;
+  });
+  pedidosRender(filtered);
+}
+document.getElementById('filtro-pedidos').addEventListener('input', applyFiltroPedidos);
+selPos.addEventListener('change', applyFiltroPedidos);
+document.getElementById('btn-aplicar-periodo').addEventListener('click', applyFiltroPedidos);
+document.getElementById('btn-limpar-periodo').addEventListener('click', ()=>{
+  inputDataDe.value = '';
+  inputDataAte.value = '';
+  applyFiltroPedidos();
+});
+const emAberto = DATA.pedidos.filter(p => p.posicao !== 'EXPEDIDO' && p.posicao !== 'PEDIDO CANCELADO').length;
+document.getElementById('stats-pedidos').innerHTML = `
+  <div class="stat"><div class="n">${DATA.stats.n_pedidos}</div><div class="l">pedidos na base</div></div>
+  <div class="stat" style="border-color:#1e3a8a"><div class="n" style="color:#93c5fd">${emAberto}</div><div class="l">em aberto (não expedidos/cancelados)</div></div>
+`;
+
+// --- Produtos mais vendidos ---
+sortable('tbl-produtos', DATA.top_produtos, p => `
+  <tr>
+    <td>${p.descricao}</td>
+    <td class="muted">${p.cod_prod}</td>
+    <td>${p.qtde}</td>
+    <td>${fmtMoney(p.valor)}</td>
+    <td>${p.preco_atual!=null?fmtMoney(p.preco_atual):'-'}</td>
+  </tr>`);
+
+// --- Produtos (tabela de precos + estoque unificados numa unica tela,
+// juntados aqui no front pelo cod_prod - o Felipe pediu pra nao ter mais
+// "Tabela de precos" e "Estoque" como abas separadas, ja que ele sempre
+// olha os dois juntos na hora de fechar um pedido) ---
+const produtosPorCodigo = new Map();
+DATA.lista_precos.forEach(p=>{
+  produtosPorCodigo.set(p.cod_prod, {
+    cod_prod: p.cod_prod,
+    descricao: p.descricao,
+    preco: p.preco,
+    estoque_sc: 0, estoque_sp: 0, estoque_es: 0,
+  });
+});
+DATA.estoque.forEach(e=>{
+  const atual = produtosPorCodigo.get(e.cod_prod);
+  if(atual){
+    atual.estoque_sc = e.estoque_sc;
+    atual.estoque_sp = e.estoque_sp;
+    atual.estoque_es = e.estoque_es;
+  } else {
+    produtosPorCodigo.set(e.cod_prod, {
+      cod_prod: e.cod_prod,
+      descricao: e.descricao,
+      preco: null,
+      estoque_sc: e.estoque_sc, estoque_sp: e.estoque_sp, estoque_es: e.estoque_es,
+    });
+  }
+});
+const listaProdutosTabela = [...produtosPorCodigo.values()].sort((a,b)=> (a.descricao||'').localeCompare(b.descricao||''));
+
+const produtosTabelaRender = sortable('tbl-produtos-tabela', listaProdutosTabela, p => `
+  <tr>
+    <td class="muted">${p.cod_prod}</td>
+    <td>${p.descricao}</td>
+    <td>${p.preco!=null ? fmtMoney(p.preco) : '-'}</td>
+    <td>${p.estoque_sc.toLocaleString('pt-BR')}</td>
+    <td>${p.estoque_sp.toLocaleString('pt-BR')}</td>
+    <td>${p.estoque_es.toLocaleString('pt-BR')}</td>
+  </tr>`,
+  n=>{ document.getElementById('count-produtos-tabela').textContent = n + ' produtos'; });
+document.getElementById('filtro-produtos-tabela').addEventListener('input', e=>{
+  const q = e.target.value.toLowerCase();
+  produtosTabelaRender(listaProdutosTabela.filter(it => (it.descricao||'').toLowerCase().includes(q) || String(it.cod_prod).includes(q)));
+});
+document.getElementById('stats-produtos-tabela').innerHTML = `
+  <div class="stat"><div class="n">${listaProdutosTabela.length}</div><div class="l">produtos (preço e/ou estoque)</div></div>
+`;
+
+const listaNovidades = DATA.novidades_estoque_sc || [];
+const novidadesRender = sortable('tbl-novidades', listaNovidades, p => `
+  <tr>
+    <td class="muted">${p.cod_prod}</td>
+    <td>${p.descricao}</td>
+    <td>${p.estoque_sc.toLocaleString('pt-BR')}</td>
+  </tr>`,
+  n=>{ document.getElementById('count-novidades').textContent = n + ' produtos'; });
+document.getElementById('filtro-novidades').addEventListener('input', e=>{
+  const q = e.target.value.toLowerCase();
+  novidadesRender(listaNovidades.filter(it => (it.descricao||'').toLowerCase().includes(q) || String(it.cod_prod).includes(q)));
+});
+if(DATA.novidades_estoque_sc_base_data){
+  const baseFmt = DATA.novidades_estoque_sc_base_data.split('-').reverse().join('/');
+  let nota = `Comparado com o estoque de SC registrado em ${baseFmt}.`;
+  if(DATA.novidades_estoque_sc_base_incompleta){
+    nota += ' Aviso: o histórico de estoque SC ainda está sendo formado (menos de 10 dias de dados acumulados) — esta lista pode não refletir exatamente os últimos 10 dias ainda.';
+  }
+  document.getElementById('novidades-nota').textContent = nota;
+} else {
+  document.getElementById('novidades-nota').textContent = 'Ainda não há histórico suficiente de estoque SC para calcular novidades. A lista começará a aparecer nos próximos dias, à medida que o histórico for acumulado.';
+}
+</script>
+</body>
+</html>

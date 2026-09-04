@@ -1,0 +1,42 @@
+[
+  {
+    "modelo": "STREETGO S12",
+    "texto_busca": "streetgo s12",
+    "paginas_fotos": [
+      4
+    ],
+    "pagina_ficha_tecnica": 4
+  },
+  {
+    "modelo": "STREETGO S14",
+    "texto_busca": "streetgo s14",
+    "paginas_fotos": [
+      5
+    ],
+    "pagina_ficha_tecnica": 5
+  },
+  {
+    "modelo": "STREETGO S17",
+    "texto_busca": "streetgo s17",
+    "paginas_fotos": [
+      6
+    ],
+    "pagina_ficha_tecnica": 6
+  },
+  {
+    "modelo": "STREETGO S27",
+    "texto_busca": "streetgo s27",
+    "paginas_fotos": [
+      7
+    ],
+    "pagina_ficha_tecnica": 7
+  },
+  {
+    "modelo": "STREETGO S40",
+    "texto_busca": "streetgo s40",
+    "paginas_fotos": [
+      8
+    ],
+    "pagina_ficha_tecnica": 8
+  }
+]

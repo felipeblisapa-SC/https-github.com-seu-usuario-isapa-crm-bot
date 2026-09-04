@@ -1,0 +1,12 @@
+node_modules/
+.env
+data/snapshot.json
+data/historico_pedidos.json
+data/auth/
+data/catalogo/tmp/
+sync/sync_log.txt
+sync/recepcao_log.txt
+sync/ciclo_log.txt
+sync/credenciais_mex3000.xml
+sync/__pycache__/
+*.log

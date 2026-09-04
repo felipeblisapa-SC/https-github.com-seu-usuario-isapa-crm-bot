@@ -1,0 +1,3320 @@
+{
+  "periodo_label": "Acumulado até Agosto/2026",
+  "gerado_em": "2026-09-04",
+  "total_carteira_2026": 39652157.21,
+  "total_carteira_2025": 49434873.87,
+  "por_cliente": [
+    {
+      "cod_cli": 89760,
+      "faturado_2025": 715730.64,
+      "faturado_2026": 699061.87,
+      "variacao_pct": -2.33,
+      "rank": 8,
+      "participacao_pct": 1.76
+    },
+    {
+      "cod_cli": 10469551,
+      "faturado_2025": 506371.09,
+      "faturado_2026": 482153.2,
+      "variacao_pct": -4.78,
+      "rank": 15,
+      "participacao_pct": 1.22
+    },
+    {
+      "cod_cli": 2649125,
+      "faturado_2025": 333439.3,
+      "faturado_2026": 356433.48,
+      "variacao_pct": 6.9,
+      "rank": 18,
+      "participacao_pct": 0.9
+    },
+    {
+      "cod_cli": 13118839,
+      "faturado_2025": 332187.68,
+      "faturado_2026": 341251.06,
+      "variacao_pct": 2.73,
+      "rank": 19,
+      "participacao_pct": 0.86
+    },
+    {
+      "cod_cli": 6078985,
+      "faturado_2025": 457001.98,
+      "faturado_2026": 319814.89,
+      "variacao_pct": -30.02,
+      "rank": 20,
+      "participacao_pct": 0.81
+    },
+    {
+      "cod_cli": 11091797,
+      "faturado_2025": 236126.73,
+      "faturado_2026": 304034.12,
+      "variacao_pct": 28.76,
+      "rank": 21,
+      "participacao_pct": 0.77
+    },
+    {
+      "cod_cli": 43342293,
+      "faturado_2025": 259159.43,
+      "faturado_2026": 272225.87,
+      "variacao_pct": 5.04,
+      "rank": 23,
+      "participacao_pct": 0.69
+    },
+    {
+      "cod_cli": 22594061,
+      "faturado_2025": 107023.72,
+      "faturado_2026": 247905.87,
+      "variacao_pct": 131.64,
+      "rank": 24,
+      "participacao_pct": 0.63
+    },
+    {
+      "cod_cli": 19584855,
+      "faturado_2025": 350796.78,
+      "faturado_2026": 213656.05,
+      "variacao_pct": -39.09,
+      "rank": 25,
+      "participacao_pct": 0.54
+    },
+    {
+      "cod_cli": 39420770,
+      "faturado_2025": 35100.25,
+      "faturado_2026": 199353.79,
+      "variacao_pct": 467.96,
+      "rank": 27,
+      "participacao_pct": 0.5
+    },
+    {
+      "cod_cli": 4842809,
+      "faturado_2025": 188241.76,
+      "faturado_2026": 194877.8,
+      "variacao_pct": 3.53,
+      "rank": 28,
+      "participacao_pct": 0.49
+    },
+    {
+      "cod_cli": 82639014,
+      "faturado_2025": 255829.67,
+      "faturado_2026": 188824.96,
+      "variacao_pct": -26.19,
+      "rank": 29,
+      "participacao_pct": 0.48
+    },
+    {
+      "cod_cli": 11167346,
+      "faturado_2025": 71135.36,
+      "faturado_2026": 184938.36,
+      "variacao_pct": 159.98,
+      "rank": 31,
+      "participacao_pct": 0.47
+    },
+    {
+      "cod_cli": 78532306,
+      "faturado_2025": 155944.76,
+      "faturado_2026": 179691.25,
+      "variacao_pct": 15.23,
+      "rank": 32,
+      "participacao_pct": 0.45
+    },
+    {
+      "cod_cli": 6242559,
+      "faturado_2025": 228091.36,
+      "faturado_2026": 172259.23,
+      "variacao_pct": -24.48,
+      "rank": 34,
+      "participacao_pct": 0.43
+    },
+    {
+      "cod_cli": 268756,
+      "faturado_2025": 192776.68,
+      "faturado_2026": 159939.19,
+      "variacao_pct": -17.03,
+      "rank": 38,
+      "participacao_pct": 0.4
+    },
+    {
+      "cod_cli": 17625695,
+      "faturado_2025": 142562.42,
+      "faturado_2026": 157512.54,
+      "variacao_pct": 10.49,
+      "rank": 39,
+      "participacao_pct": 0.4
+    },
+    {
+      "cod_cli": 212942,
+      "faturado_2025": 184958.2,
+      "faturado_2026": 148866.11,
+      "variacao_pct": -19.51,
+      "rank": 41,
+      "participacao_pct": 0.38
+    },
+    {
+      "cod_cli": 27486952,
+      "faturado_2025": 264180.54,
+      "faturado_2026": 147685.93,
+      "variacao_pct": -44.1,
+      "rank": 42,
+      "participacao_pct": 0.37
+    },
+    {
+      "cod_cli": 49855967,
+      "faturado_2025": 153690.15,
+      "faturado_2026": 139667.16,
+      "variacao_pct": -9.12,
+      "rank": 44,
+      "participacao_pct": 0.35
+    },
+    {
+      "cod_cli": 29005897,
+      "faturado_2025": 156910.94,
+      "faturado_2026": 135386.65,
+      "variacao_pct": -13.72,
+      "rank": 46,
+      "participacao_pct": 0.34
+    },
+    {
+      "cod_cli": 44423497,
+      "faturado_2025": 161855.08,
+      "faturado_2026": 135205.15,
+      "variacao_pct": -16.47,
+      "rank": 47,
+      "participacao_pct": 0.34
+    },
+    {
+      "cod_cli": 33452894,
+      "faturado_2025": 117835.27,
+      "faturado_2026": 131553.2,
+      "variacao_pct": 11.64,
+      "rank": 50,
+      "participacao_pct": 0.33
+    },
+    {
+      "cod_cli": 81615841,
+      "faturado_2025": 130730.36,
+      "faturado_2026": 127660.8,
+      "variacao_pct": -2.35,
+      "rank": 52,
+      "participacao_pct": 0.32
+    },
+    {
+      "cod_cli": 73957599,
+      "faturado_2025": 156254.52,
+      "faturado_2026": 126490.67,
+      "variacao_pct": -19.05,
+      "rank": 53,
+      "participacao_pct": 0.32
+    },
+    {
+      "cod_cli": 36107470,
+      "faturado_2025": 0.0,
+      "faturado_2026": 123040.82,
+      "variacao_pct": 100.0,
+      "rank": 54,
+      "participacao_pct": 0.31
+    },
+    {
+      "cod_cli": 37075811,
+      "faturado_2025": 58001.55,
+      "faturado_2026": 121661.47,
+      "variacao_pct": 109.76,
+      "rank": 55,
+      "participacao_pct": 0.31
+    },
+    {
+      "cod_cli": 11748120,
+      "faturado_2025": 44295.05,
+      "faturado_2026": 120709.35,
+      "variacao_pct": 172.51,
+      "rank": 56,
+      "participacao_pct": 0.3
+    },
+    {
+      "cod_cli": 3423049,
+      "faturado_2025": 91148.44,
+      "faturado_2026": 116847.13,
+      "variacao_pct": 28.19,
+      "rank": 58,
+      "participacao_pct": 0.29
+    },
+    {
+      "cod_cli": 50201391,
+      "faturado_2025": 118601.16,
+      "faturado_2026": 112744.93,
+      "variacao_pct": -4.94,
+      "rank": 59,
+      "participacao_pct": 0.28
+    },
+    {
+      "cod_cli": 16808262,
+      "faturado_2025": 130135.68,
+      "faturado_2026": 110392.93,
+      "variacao_pct": -15.17,
+      "rank": 60,
+      "participacao_pct": 0.28
+    },
+    {
+      "cod_cli": 78213089,
+      "faturado_2025": 121405.56,
+      "faturado_2026": 101981.7,
+      "variacao_pct": -16.0,
+      "rank": 62,
+      "participacao_pct": 0.26
+    },
+    {
+      "cod_cli": 10281177,
+      "faturado_2025": 76094.93,
+      "faturado_2026": 99925.15,
+      "variacao_pct": 31.32,
+      "rank": 64,
+      "participacao_pct": 0.25
+    },
+    {
+      "cod_cli": 31557178,
+      "faturado_2025": 82032.72,
+      "faturado_2026": 98362.44,
+      "variacao_pct": 19.91,
+      "rank": 65,
+      "participacao_pct": 0.25
+    },
+    {
+      "cod_cli": 15696268,
+      "faturado_2025": 111832.06,
+      "faturado_2026": 94270.42,
+      "variacao_pct": -15.7,
+      "rank": 67,
+      "participacao_pct": 0.24
+    },
+    {
+      "cod_cli": 12385158,
+      "faturado_2025": 95981.48,
+      "faturado_2026": 93923.8,
+      "variacao_pct": -2.14,
+      "rank": 68,
+      "participacao_pct": 0.24
+    },
+    {
+      "cod_cli": 40417476,
+      "faturado_2025": 172302.41,
+      "faturado_2026": 93652.94,
+      "variacao_pct": -45.65,
+      "rank": 69,
+      "participacao_pct": 0.24
+    },
+    {
+      "cod_cli": 17744588,
+      "faturado_2025": 99768.6,
+      "faturado_2026": 92294.78,
+      "variacao_pct": -7.49,
+      "rank": 70,
+      "participacao_pct": 0.23
+    },
+    {
+      "cod_cli": 6311171,
+      "faturado_2025": 107887.19,
+      "faturado_2026": 92203.9,
+      "variacao_pct": -14.54,
+      "rank": 73,
+      "participacao_pct": 0.23
+    },
+    {
+      "cod_cli": 6311149,
+      "faturado_2025": 96935.06,
+      "faturado_2026": 90264.75,
+      "variacao_pct": -6.88,
+      "rank": 74,
+      "participacao_pct": 0.23
+    },
+    {
+      "cod_cli": 10333606,
+      "faturado_2025": 99140.32,
+      "faturado_2026": 89277.11,
+      "variacao_pct": -9.95,
+      "rank": 76,
+      "participacao_pct": 0.23
+    },
+    {
+      "cod_cli": 44226072,
+      "faturado_2025": 143547.81,
+      "faturado_2026": 88843.32,
+      "variacao_pct": -38.11,
+      "rank": 77,
+      "participacao_pct": 0.22
+    },
+    {
+      "cod_cli": 28689997,
+      "faturado_2025": 86229.71,
+      "faturado_2026": 88576.07,
+      "variacao_pct": 2.72,
+      "rank": 78,
+      "participacao_pct": 0.22
+    },
+    {
+      "cod_cli": 8147292,
+      "faturado_2025": 85725.9,
+      "faturado_2026": 87146.36,
+      "variacao_pct": 1.66,
+      "rank": 80,
+      "participacao_pct": 0.22
+    },
+    {
+      "cod_cli": 4284775,
+      "faturado_2025": 200833.41,
+      "faturado_2026": 84803.98,
+      "variacao_pct": -57.77,
+      "rank": 81,
+      "participacao_pct": 0.21
+    },
+    {
+      "cod_cli": 4770159,
+      "faturado_2025": 101293.49,
+      "faturado_2026": 83104.5,
+      "variacao_pct": -17.96,
+      "rank": 82,
+      "participacao_pct": 0.21
+    },
+    {
+      "cod_cli": 57812981,
+      "faturado_2025": 169627.22,
+      "faturado_2026": 82457.19,
+      "variacao_pct": -51.39,
+      "rank": 83,
+      "participacao_pct": 0.21
+    },
+    {
+      "cod_cli": 4630989,
+      "faturado_2025": 93417.17,
+      "faturado_2026": 81803.92,
+      "variacao_pct": -12.43,
+      "rank": 84,
+      "participacao_pct": 0.21
+    },
+    {
+      "cod_cli": 13714517,
+      "faturado_2025": 127422.64,
+      "faturado_2026": 78971.97,
+      "variacao_pct": -38.02,
+      "rank": 85,
+      "participacao_pct": 0.2
+    },
+    {
+      "cod_cli": 18088208,
+      "faturado_2025": 93426.27,
+      "faturado_2026": 74064.66,
+      "variacao_pct": -20.72,
+      "rank": 89,
+      "participacao_pct": 0.19
+    },
+    {
+      "cod_cli": 12509041,
+      "faturado_2025": 36177.86,
+      "faturado_2026": 71486.55,
+      "variacao_pct": 97.6,
+      "rank": 90,
+      "participacao_pct": 0.18
+    },
+    {
+      "cod_cli": 15728050,
+      "faturado_2025": 99886.68,
+      "faturado_2026": 70535.59,
+      "variacao_pct": -29.38,
+      "rank": 91,
+      "participacao_pct": 0.18
+    },
+    {
+      "cod_cli": 79226411,
+      "faturado_2025": 91660.69,
+      "faturado_2026": 69224.99,
+      "variacao_pct": -24.48,
+      "rank": 92,
+      "participacao_pct": 0.17
+    },
+    {
+      "cod_cli": 2879578,
+      "faturado_2025": 65876.13,
+      "faturado_2026": 67397.48,
+      "variacao_pct": 2.31,
+      "rank": 93,
+      "participacao_pct": 0.17
+    },
+    {
+      "cod_cli": 30590800,
+      "faturado_2025": 61731.48,
+      "faturado_2026": 66677.1,
+      "variacao_pct": 8.01,
+      "rank": 94,
+      "participacao_pct": 0.17
+    },
+    {
+      "cod_cli": 13956417,
+      "faturado_2025": 98311.62,
+      "faturado_2026": 65842.99,
+      "variacao_pct": -33.03,
+      "rank": 95,
+      "participacao_pct": 0.17
+    },
+    {
+      "cod_cli": 14633158,
+      "faturado_2025": 79519.23,
+      "faturado_2026": 65309.6,
+      "variacao_pct": -17.87,
+      "rank": 96,
+      "participacao_pct": 0.16
+    },
+    {
+      "cod_cli": 83240333,
+      "faturado_2025": 73228.17,
+      "faturado_2026": 62810.94,
+      "variacao_pct": -14.23,
+      "rank": 97,
+      "participacao_pct": 0.16
+    },
+    {
+      "cod_cli": 59562185,
+      "faturado_2025": 0.0,
+      "faturado_2026": 62372.2,
+      "variacao_pct": 100.0,
+      "rank": 98,
+      "participacao_pct": 0.16
+    },
+    {
+      "cod_cli": 95777207,
+      "faturado_2025": 70742.49,
+      "faturado_2026": 62108.98,
+      "variacao_pct": -12.2,
+      "rank": 99,
+      "participacao_pct": 0.16
+    },
+    {
+      "cod_cli": 11634802,
+      "faturado_2025": 60182.0,
+      "faturado_2026": 61954.9,
+      "variacao_pct": 2.95,
+      "rank": 100,
+      "participacao_pct": 0.16
+    },
+    {
+      "cod_cli": 7324282,
+      "faturado_2025": 116747.87,
+      "faturado_2026": 60976.36,
+      "variacao_pct": -47.77,
+      "rank": 101,
+      "participacao_pct": 0.15
+    },
+    {
+      "cod_cli": 21777157,
+      "faturado_2025": 61624.17,
+      "faturado_2026": 60594.58,
+      "variacao_pct": -1.67,
+      "rank": 102,
+      "participacao_pct": 0.15
+    },
+    {
+      "cod_cli": 95859179,
+      "faturado_2025": 44495.89,
+      "faturado_2026": 59997.1,
+      "variacao_pct": 34.84,
+      "rank": 103,
+      "participacao_pct": 0.15
+    },
+    {
+      "cod_cli": 11697144,
+      "faturado_2025": 71758.63,
+      "faturado_2026": 59833.32,
+      "variacao_pct": -16.62,
+      "rank": 104,
+      "participacao_pct": 0.15
+    },
+    {
+      "cod_cli": 78358967,
+      "faturado_2025": 70620.54,
+      "faturado_2026": 59723.3,
+      "variacao_pct": -15.43,
+      "rank": 106,
+      "participacao_pct": 0.15
+    },
+    {
+      "cod_cli": 56300223,
+      "faturado_2025": 1663.31,
+      "faturado_2026": 59562.84,
+      "variacao_pct": 3480.98,
+      "rank": 107,
+      "participacao_pct": 0.15
+    },
+    {
+      "cod_cli": 3994937,
+      "faturado_2025": 50769.34,
+      "faturado_2026": 57939.44,
+      "variacao_pct": 14.12,
+      "rank": 108,
+      "participacao_pct": 0.15
+    },
+    {
+      "cod_cli": 22093340,
+      "faturado_2025": 42378.5,
+      "faturado_2026": 57784.99,
+      "variacao_pct": 36.35,
+      "rank": 109,
+      "participacao_pct": 0.15
+    },
+    {
+      "cod_cli": 97476253,
+      "faturado_2025": 78645.84,
+      "faturado_2026": 57767.95,
+      "variacao_pct": -26.55,
+      "rank": 110,
+      "participacao_pct": 0.15
+    },
+    {
+      "cod_cli": 40538107,
+      "faturado_2025": 105328.29,
+      "faturado_2026": 57708.16,
+      "variacao_pct": -45.21,
+      "rank": 111,
+      "participacao_pct": 0.15
+    },
+    {
+      "cod_cli": 54481778,
+      "faturado_2025": 67787.37,
+      "faturado_2026": 57469.3,
+      "variacao_pct": -15.22,
+      "rank": 112,
+      "participacao_pct": 0.14
+    },
+    {
+      "cod_cli": 29722930,
+      "faturado_2025": 75058.83,
+      "faturado_2026": 57302.54,
+      "variacao_pct": -23.66,
+      "rank": 113,
+      "participacao_pct": 0.14
+    },
+    {
+      "cod_cli": 72194988,
+      "faturado_2025": 25342.77,
+      "faturado_2026": 56645.02,
+      "variacao_pct": 123.52,
+      "rank": 114,
+      "participacao_pct": 0.14
+    },
+    {
+      "cod_cli": 47875763,
+      "faturado_2025": 39292.6,
+      "faturado_2026": 54588.4,
+      "variacao_pct": 38.93,
+      "rank": 115,
+      "participacao_pct": 0.14
+    },
+    {
+      "cod_cli": 30591489,
+      "faturado_2025": 41265.72,
+      "faturado_2026": 54317.25,
+      "variacao_pct": 31.63,
+      "rank": 117,
+      "participacao_pct": 0.14
+    },
+    {
+      "cod_cli": 73760712,
+      "faturado_2025": 142737.15,
+      "faturado_2026": 53518.01,
+      "variacao_pct": -62.51,
+      "rank": 118,
+      "participacao_pct": 0.13
+    },
+    {
+      "cod_cli": 39753671,
+      "faturado_2025": 60418.44,
+      "faturado_2026": 52584.49,
+      "variacao_pct": -12.97,
+      "rank": 119,
+      "participacao_pct": 0.13
+    },
+    {
+      "cod_cli": 4408957,
+      "faturado_2025": 75382.14,
+      "faturado_2026": 51947.4,
+      "variacao_pct": -31.09,
+      "rank": 120,
+      "participacao_pct": 0.13
+    },
+    {
+      "cod_cli": 80655285,
+      "faturado_2025": 63330.15,
+      "faturado_2026": 51659.2,
+      "variacao_pct": -18.43,
+      "rank": 121,
+      "participacao_pct": 0.13
+    },
+    {
+      "cod_cli": 9054648,
+      "faturado_2025": 53710.39,
+      "faturado_2026": 49706.61,
+      "variacao_pct": -7.45,
+      "rank": 124,
+      "participacao_pct": 0.13
+    },
+    {
+      "cod_cli": 34796564,
+      "faturado_2025": 53959.44,
+      "faturado_2026": 46493.15,
+      "variacao_pct": -13.84,
+      "rank": 125,
+      "participacao_pct": 0.12
+    },
+    {
+      "cod_cli": 1052243,
+      "faturado_2025": 45536.82,
+      "faturado_2026": 46323.39,
+      "variacao_pct": 1.73,
+      "rank": 126,
+      "participacao_pct": 0.12
+    },
+    {
+      "cod_cli": 35432030,
+      "faturado_2025": 33803.05,
+      "faturado_2026": 46090.18,
+      "variacao_pct": 36.35,
+      "rank": 127,
+      "participacao_pct": 0.12
+    },
+    {
+      "cod_cli": 31222464,
+      "faturado_2025": 42535.32,
+      "faturado_2026": 45730.27,
+      "variacao_pct": 7.51,
+      "rank": 128,
+      "participacao_pct": 0.12
+    },
+    {
+      "cod_cli": 59226237,
+      "faturado_2025": 36401.37,
+      "faturado_2026": 45587.93,
+      "variacao_pct": 25.24,
+      "rank": 129,
+      "participacao_pct": 0.11
+    },
+    {
+      "cod_cli": 56701542,
+      "faturado_2025": 0.0,
+      "faturado_2026": 44305.41,
+      "variacao_pct": 100.0,
+      "rank": 130,
+      "participacao_pct": 0.11
+    },
+    {
+      "cod_cli": 2949646,
+      "faturado_2025": 31104.02,
+      "faturado_2026": 43740.03,
+      "variacao_pct": 40.63,
+      "rank": 132,
+      "participacao_pct": 0.11
+    },
+    {
+      "cod_cli": 20758545,
+      "faturado_2025": 63667.83,
+      "faturado_2026": 43356.16,
+      "variacao_pct": -31.9,
+      "rank": 133,
+      "participacao_pct": 0.11
+    },
+    {
+      "cod_cli": 10014242,
+      "faturado_2025": 112465.72,
+      "faturado_2026": 43065.21,
+      "variacao_pct": -61.71,
+      "rank": 134,
+      "participacao_pct": 0.11
+    },
+    {
+      "cod_cli": 4999571,
+      "faturado_2025": 46710.33,
+      "faturado_2026": 42769.77,
+      "variacao_pct": -8.44,
+      "rank": 135,
+      "participacao_pct": 0.11
+    },
+    {
+      "cod_cli": 37782193,
+      "faturado_2025": 86411.15,
+      "faturado_2026": 42582.51,
+      "variacao_pct": -50.72,
+      "rank": 136,
+      "participacao_pct": 0.11
+    },
+    {
+      "cod_cli": 63333883,
+      "faturado_2025": 0.0,
+      "faturado_2026": 42476.44,
+      "variacao_pct": 100.0,
+      "rank": 137,
+      "participacao_pct": 0.11
+    },
+    {
+      "cod_cli": 9481635,
+      "faturado_2025": 43303.22,
+      "faturado_2026": 41902.86,
+      "variacao_pct": -3.23,
+      "rank": 138,
+      "participacao_pct": 0.11
+    },
+    {
+      "cod_cli": 52854022,
+      "faturado_2025": 37959.11,
+      "faturado_2026": 41619.62,
+      "variacao_pct": 9.64,
+      "rank": 139,
+      "participacao_pct": 0.1
+    },
+    {
+      "cod_cli": 10561556,
+      "faturado_2025": 31527.95,
+      "faturado_2026": 41534.72,
+      "variacao_pct": 31.74,
+      "rank": 140,
+      "participacao_pct": 0.1
+    },
+    {
+      "cod_cli": 35028982,
+      "faturado_2025": 45506.46,
+      "faturado_2026": 41300.26,
+      "variacao_pct": -9.24,
+      "rank": 141,
+      "participacao_pct": 0.1
+    },
+    {
+      "cod_cli": 7736998,
+      "faturado_2025": 20541.03,
+      "faturado_2026": 39404.51,
+      "variacao_pct": 91.83,
+      "rank": 144,
+      "participacao_pct": 0.1
+    },
+    {
+      "cod_cli": 38260234,
+      "faturado_2025": 40891.35,
+      "faturado_2026": 38812.17,
+      "variacao_pct": -5.08,
+      "rank": 145,
+      "participacao_pct": 0.1
+    },
+    {
+      "cod_cli": 49133518,
+      "faturado_2025": 139525.8,
+      "faturado_2026": 38630.93,
+      "variacao_pct": -72.31,
+      "rank": 146,
+      "participacao_pct": 0.1
+    },
+    {
+      "cod_cli": 49630319,
+      "faturado_2025": 76904.08,
+      "faturado_2026": 38524.09,
+      "variacao_pct": -49.91,
+      "rank": 147,
+      "participacao_pct": 0.1
+    },
+    {
+      "cod_cli": 16443923,
+      "faturado_2025": 34799.03,
+      "faturado_2026": 37549.75,
+      "variacao_pct": 7.9,
+      "rank": 148,
+      "participacao_pct": 0.09
+    },
+    {
+      "cod_cli": 40242473,
+      "faturado_2025": 35629.13,
+      "faturado_2026": 37166.94,
+      "variacao_pct": 4.32,
+      "rank": 149,
+      "participacao_pct": 0.09
+    },
+    {
+      "cod_cli": 4684483,
+      "faturado_2025": 30947.82,
+      "faturado_2026": 37156.07,
+      "variacao_pct": 20.06,
+      "rank": 150,
+      "participacao_pct": 0.09
+    },
+    {
+      "cod_cli": 3696316,
+      "faturado_2025": 55976.68,
+      "faturado_2026": 36289.95,
+      "variacao_pct": -35.17,
+      "rank": 153,
+      "participacao_pct": 0.09
+    },
+    {
+      "cod_cli": 66890661,
+      "faturado_2025": 0.0,
+      "faturado_2026": 35736.9,
+      "variacao_pct": 100.0,
+      "rank": 154,
+      "participacao_pct": 0.09
+    },
+    {
+      "cod_cli": 6029924,
+      "faturado_2025": 87936.51,
+      "faturado_2026": 35641.1,
+      "variacao_pct": -59.47,
+      "rank": 155,
+      "participacao_pct": 0.09
+    },
+    {
+      "cod_cli": 1493308,
+      "faturado_2025": 38477.05,
+      "faturado_2026": 35320.64,
+      "variacao_pct": -8.2,
+      "rank": 156,
+      "participacao_pct": 0.09
+    },
+    {
+      "cod_cli": 45460444,
+      "faturado_2025": 60502.81,
+      "faturado_2026": 34872.16,
+      "variacao_pct": -42.36,
+      "rank": 157,
+      "participacao_pct": 0.09
+    },
+    {
+      "cod_cli": 42553517,
+      "faturado_2025": 15103.7,
+      "faturado_2026": 34645.98,
+      "variacao_pct": 129.39,
+      "rank": 160,
+      "participacao_pct": 0.09
+    },
+    {
+      "cod_cli": 51026283,
+      "faturado_2025": 0.0,
+      "faturado_2026": 34527.23,
+      "variacao_pct": 100.0,
+      "rank": 161,
+      "participacao_pct": 0.09
+    },
+    {
+      "cod_cli": 3314399,
+      "faturado_2025": 58718.12,
+      "faturado_2026": 34526.19,
+      "variacao_pct": -41.2,
+      "rank": 162,
+      "participacao_pct": 0.09
+    },
+    {
+      "cod_cli": 170954,
+      "faturado_2025": 53403.77,
+      "faturado_2026": 33949.74,
+      "variacao_pct": -36.43,
+      "rank": 163,
+      "participacao_pct": 0.09
+    },
+    {
+      "cod_cli": 58412716,
+      "faturado_2025": 28035.6,
+      "faturado_2026": 33595.27,
+      "variacao_pct": 19.83,
+      "rank": 164,
+      "participacao_pct": 0.08
+    },
+    {
+      "cod_cli": 14273530,
+      "faturado_2025": 33248.59,
+      "faturado_2026": 33180.24,
+      "variacao_pct": -0.21,
+      "rank": 165,
+      "participacao_pct": 0.08
+    },
+    {
+      "cod_cli": 28917905,
+      "faturado_2025": 38709.46,
+      "faturado_2026": 32374.46,
+      "variacao_pct": -16.37,
+      "rank": 168,
+      "participacao_pct": 0.08
+    },
+    {
+      "cod_cli": 194494,
+      "faturado_2025": 35237.33,
+      "faturado_2026": 32267.55,
+      "variacao_pct": -8.43,
+      "rank": 169,
+      "participacao_pct": 0.08
+    },
+    {
+      "cod_cli": 40259755,
+      "faturado_2025": 6401.58,
+      "faturado_2026": 31928.1,
+      "variacao_pct": 398.75,
+      "rank": 170,
+      "participacao_pct": 0.08
+    },
+    {
+      "cod_cli": 5680477,
+      "faturado_2025": 26586.57,
+      "faturado_2026": 30332.28,
+      "variacao_pct": 14.09,
+      "rank": 173,
+      "participacao_pct": 0.08
+    },
+    {
+      "cod_cli": 27971618,
+      "faturado_2025": 11724.32,
+      "faturado_2026": 30304.24,
+      "variacao_pct": 158.47,
+      "rank": 174,
+      "participacao_pct": 0.08
+    },
+    {
+      "cod_cli": 2816172,
+      "faturado_2025": 50275.69,
+      "faturado_2026": 29982.65,
+      "variacao_pct": -40.36,
+      "rank": 175,
+      "participacao_pct": 0.08
+    },
+    {
+      "cod_cli": 7450792,
+      "faturado_2025": 22567.2,
+      "faturado_2026": 29892.72,
+      "variacao_pct": 32.46,
+      "rank": 176,
+      "participacao_pct": 0.08
+    },
+    {
+      "cod_cli": 19322210,
+      "faturado_2025": 51680.99,
+      "faturado_2026": 29818.61,
+      "variacao_pct": -42.3,
+      "rank": 177,
+      "participacao_pct": 0.08
+    },
+    {
+      "cod_cli": 79250783,
+      "faturado_2025": 24722.22,
+      "faturado_2026": 29255.65,
+      "variacao_pct": 18.34,
+      "rank": 178,
+      "participacao_pct": 0.07
+    },
+    {
+      "cod_cli": 17498350,
+      "faturado_2025": 20706.51,
+      "faturado_2026": 29227.46,
+      "variacao_pct": 41.15,
+      "rank": 179,
+      "participacao_pct": 0.07
+    },
+    {
+      "cod_cli": 22195489,
+      "faturado_2025": 76805.48,
+      "faturado_2026": 28552.19,
+      "variacao_pct": -62.83,
+      "rank": 181,
+      "participacao_pct": 0.07
+    },
+    {
+      "cod_cli": 10655690,
+      "faturado_2025": 28428.48,
+      "faturado_2026": 28217.21,
+      "variacao_pct": -0.74,
+      "rank": 183,
+      "participacao_pct": 0.07
+    },
+    {
+      "cod_cli": 28412089,
+      "faturado_2025": 42981.95,
+      "faturado_2026": 27460.08,
+      "variacao_pct": -36.11,
+      "rank": 184,
+      "participacao_pct": 0.07
+    },
+    {
+      "cod_cli": 24700170,
+      "faturado_2025": 0.0,
+      "faturado_2026": 27015.39,
+      "variacao_pct": 100.0,
+      "rank": 185,
+      "participacao_pct": 0.07
+    },
+    {
+      "cod_cli": 13239233,
+      "faturado_2025": 36749.96,
+      "faturado_2026": 26955.84,
+      "variacao_pct": -26.65,
+      "rank": 186,
+      "participacao_pct": 0.07
+    },
+    {
+      "cod_cli": 72195324,
+      "faturado_2025": 13567.96,
+      "faturado_2026": 26683.09,
+      "variacao_pct": 96.66,
+      "rank": 187,
+      "participacao_pct": 0.07
+    },
+    {
+      "cod_cli": 12091293,
+      "faturado_2025": 24543.74,
+      "faturado_2026": 26532.94,
+      "variacao_pct": 8.1,
+      "rank": 188,
+      "participacao_pct": 0.07
+    },
+    {
+      "cod_cli": 55527449,
+      "faturado_2025": 0.0,
+      "faturado_2026": 26385.01,
+      "variacao_pct": 100.0,
+      "rank": 189,
+      "participacao_pct": 0.07
+    },
+    {
+      "cod_cli": 21431826,
+      "faturado_2025": 38672.46,
+      "faturado_2026": 26003.66,
+      "variacao_pct": -32.76,
+      "rank": 190,
+      "participacao_pct": 0.07
+    },
+    {
+      "cod_cli": 42710906,
+      "faturado_2025": 28429.48,
+      "faturado_2026": 25977.34,
+      "variacao_pct": -8.63,
+      "rank": 191,
+      "participacao_pct": 0.07
+    },
+    {
+      "cod_cli": 44576786,
+      "faturado_2025": 23924.57,
+      "faturado_2026": 25903.57,
+      "variacao_pct": 8.27,
+      "rank": 192,
+      "participacao_pct": 0.07
+    },
+    {
+      "cod_cli": 36058178,
+      "faturado_2025": 42137.02,
+      "faturado_2026": 25352.63,
+      "variacao_pct": -39.83,
+      "rank": 195,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 14363016,
+      "faturado_2025": 32044.2,
+      "faturado_2026": 25275.3,
+      "variacao_pct": -21.12,
+      "rank": 196,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 38181833,
+      "faturado_2025": 12869.71,
+      "faturado_2026": 25264.58,
+      "variacao_pct": 96.31,
+      "rank": 197,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 2546619,
+      "faturado_2025": 47627.52,
+      "faturado_2026": 25181.98,
+      "variacao_pct": -47.13,
+      "rank": 198,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 29146508,
+      "faturado_2025": 68077.74,
+      "faturado_2026": 24990.42,
+      "variacao_pct": -63.29,
+      "rank": 199,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 5858829,
+      "faturado_2025": 11967.16,
+      "faturado_2026": 24754.47,
+      "variacao_pct": 106.85,
+      "rank": 200,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 10362401,
+      "faturado_2025": 91723.65,
+      "faturado_2026": 24621.24,
+      "variacao_pct": -73.16,
+      "rank": 201,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 25180884,
+      "faturado_2025": 0.0,
+      "faturado_2026": 24612.34,
+      "variacao_pct": 100.0,
+      "rank": 202,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 11544201,
+      "faturado_2025": 20103.53,
+      "faturado_2026": 24508.04,
+      "variacao_pct": 21.91,
+      "rank": 203,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 63510419,
+      "faturado_2025": 0.0,
+      "faturado_2026": 24409.0,
+      "variacao_pct": 100.0,
+      "rank": 204,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 24927283,
+      "faturado_2025": 11899.88,
+      "faturado_2026": 23953.87,
+      "variacao_pct": 101.3,
+      "rank": 205,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 81871246,
+      "faturado_2025": 19305.87,
+      "faturado_2026": 23741.3,
+      "variacao_pct": 22.97,
+      "rank": 206,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 32357947,
+      "faturado_2025": 15078.97,
+      "faturado_2026": 23609.46,
+      "variacao_pct": 56.57,
+      "rank": 207,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 42698695,
+      "faturado_2025": 48289.58,
+      "faturado_2026": 23538.58,
+      "variacao_pct": -51.26,
+      "rank": 208,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 16809150,
+      "faturado_2025": 23818.13,
+      "faturado_2026": 23511.03,
+      "variacao_pct": -1.29,
+      "rank": 209,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 7170842,
+      "faturado_2025": 85439.14,
+      "faturado_2026": 23452.12,
+      "variacao_pct": -72.55,
+      "rank": 210,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 7757084,
+      "faturado_2025": 44814.25,
+      "faturado_2026": 23286.84,
+      "variacao_pct": -48.04,
+      "rank": 211,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 42418769,
+      "faturado_2025": 0.0,
+      "faturado_2026": 23230.53,
+      "variacao_pct": 100.0,
+      "rank": 212,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 26459418,
+      "faturado_2025": 22595.23,
+      "faturado_2026": 23139.0,
+      "variacao_pct": 2.41,
+      "rank": 214,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 54665660,
+      "faturado_2025": 15096.2,
+      "faturado_2026": 23123.29,
+      "variacao_pct": 53.17,
+      "rank": 215,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 19560753,
+      "faturado_2025": 18604.21,
+      "faturado_2026": 22619.89,
+      "variacao_pct": 21.58,
+      "rank": 219,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 32975325,
+      "faturado_2025": 90088.18,
+      "faturado_2026": 22480.18,
+      "variacao_pct": -75.05,
+      "rank": 220,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 12041238,
+      "faturado_2025": 31906.68,
+      "faturado_2026": 22467.67,
+      "variacao_pct": -29.58,
+      "rank": 221,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 32920797,
+      "faturado_2025": 16929.01,
+      "faturado_2026": 22448.85,
+      "variacao_pct": 32.61,
+      "rank": 222,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 27701821,
+      "faturado_2025": 25610.99,
+      "faturado_2026": 22300.99,
+      "variacao_pct": -12.92,
+      "rank": 223,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 10744383,
+      "faturado_2025": 22525.87,
+      "faturado_2026": 22089.98,
+      "variacao_pct": -1.94,
+      "rank": 224,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 95780920,
+      "faturado_2025": 31135.05,
+      "faturado_2026": 21859.97,
+      "variacao_pct": -29.79,
+      "rank": 225,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 80448202,
+      "faturado_2025": 32382.85,
+      "faturado_2026": 21829.92,
+      "variacao_pct": -32.59,
+      "rank": 226,
+      "participacao_pct": 0.06
+    },
+    {
+      "cod_cli": 50702876,
+      "faturado_2025": 38064.6,
+      "faturado_2026": 21414.34,
+      "variacao_pct": -43.74,
+      "rank": 229,
+      "participacao_pct": 0.05
+    },
+    {
+      "cod_cli": 59874001,
+      "faturado_2025": 0.0,
+      "faturado_2026": 21138.28,
+      "variacao_pct": 100.0,
+      "rank": 230,
+      "participacao_pct": 0.05
+    },
+    {
+      "cod_cli": 24029124,
+      "faturado_2025": 24053.64,
+      "faturado_2026": 21021.93,
+      "variacao_pct": -12.6,
+      "rank": 231,
+      "participacao_pct": 0.05
+    },
+    {
+      "cod_cli": 46387252,
+      "faturado_2025": 25855.98,
+      "faturado_2026": 20814.63,
+      "variacao_pct": -19.5,
+      "rank": 232,
+      "participacao_pct": 0.05
+    },
+    {
+      "cod_cli": 15123881,
+      "faturado_2025": 22044.02,
+      "faturado_2026": 20802.66,
+      "variacao_pct": -5.63,
+      "rank": 233,
+      "participacao_pct": 0.05
+    },
+    {
+      "cod_cli": 41974977,
+      "faturado_2025": 34147.58,
+      "faturado_2026": 20460.46,
+      "variacao_pct": -40.08,
+      "rank": 234,
+      "participacao_pct": 0.05
+    },
+    {
+      "cod_cli": 55896273,
+      "faturado_2025": 0.0,
+      "faturado_2026": 20216.41,
+      "variacao_pct": 100.0,
+      "rank": 235,
+      "participacao_pct": 0.05
+    },
+    {
+      "cod_cli": 81805632,
+      "faturado_2025": 37452.37,
+      "faturado_2026": 20177.41,
+      "variacao_pct": -46.13,
+      "rank": 236,
+      "participacao_pct": 0.05
+    },
+    {
+      "cod_cli": 37286029,
+      "faturado_2025": 16384.56,
+      "faturado_2026": 20088.87,
+      "variacao_pct": 22.61,
+      "rank": 237,
+      "participacao_pct": 0.05
+    },
+    {
+      "cod_cli": 3914312,
+      "faturado_2025": 23782.11,
+      "faturado_2026": 19957.5,
+      "variacao_pct": -16.08,
+      "rank": 239,
+      "participacao_pct": 0.05
+    },
+    {
+      "cod_cli": 55570341,
+      "faturado_2025": 16205.11,
+      "faturado_2026": 19794.12,
+      "variacao_pct": 22.15,
+      "rank": 240,
+      "participacao_pct": 0.05
+    },
+    {
+      "cod_cli": 8610014,
+      "faturado_2025": 6969.17,
+      "faturado_2026": 19653.17,
+      "variacao_pct": 182.0,
+      "rank": 241,
+      "participacao_pct": 0.05
+    },
+    {
+      "cod_cli": 44363186,
+      "faturado_2025": 7128.33,
+      "faturado_2026": 19137.94,
+      "variacao_pct": 168.48,
+      "rank": 243,
+      "participacao_pct": 0.05
+    },
+    {
+      "cod_cli": 7505768,
+      "faturado_2025": 63862.13,
+      "faturado_2026": 18957.03,
+      "variacao_pct": -70.32,
+      "rank": 244,
+      "participacao_pct": 0.05
+    },
+    {
+      "cod_cli": 55427498,
+      "faturado_2025": 0.0,
+      "faturado_2026": 18916.72,
+      "variacao_pct": 100.0,
+      "rank": 245,
+      "participacao_pct": 0.05
+    },
+    {
+      "cod_cli": 47254702,
+      "faturado_2025": 15337.05,
+      "faturado_2026": 18419.5,
+      "variacao_pct": 20.1,
+      "rank": 246,
+      "participacao_pct": 0.05
+    },
+    {
+      "cod_cli": 50950961,
+      "faturado_2025": 11475.37,
+      "faturado_2026": 18102.57,
+      "variacao_pct": 57.75,
+      "rank": 247,
+      "participacao_pct": 0.05
+    },
+    {
+      "cod_cli": 75819,
+      "faturado_2025": 39852.8,
+      "faturado_2026": 17990.91,
+      "variacao_pct": -54.86,
+      "rank": 248,
+      "participacao_pct": 0.05
+    },
+    {
+      "cod_cli": 53645137,
+      "faturado_2025": 9422.03,
+      "faturado_2026": 17799.73,
+      "variacao_pct": 88.92,
+      "rank": 249,
+      "participacao_pct": 0.04
+    },
+    {
+      "cod_cli": 53924324,
+      "faturado_2025": 28248.79,
+      "faturado_2026": 17762.59,
+      "variacao_pct": -37.12,
+      "rank": 250,
+      "participacao_pct": 0.04
+    },
+    {
+      "cod_cli": 7231755,
+      "faturado_2025": 13304.89,
+      "faturado_2026": 17186.44,
+      "variacao_pct": 29.17,
+      "rank": 251,
+      "participacao_pct": 0.04
+    },
+    {
+      "cod_cli": 16632326,
+      "faturado_2025": 18361.57,
+      "faturado_2026": 17016.82,
+      "variacao_pct": -7.32,
+      "rank": 252,
+      "participacao_pct": 0.04
+    },
+    {
+      "cod_cli": 16897681,
+      "faturado_2025": 21968.94,
+      "faturado_2026": 16974.62,
+      "variacao_pct": -22.73,
+      "rank": 253,
+      "participacao_pct": 0.04
+    },
+    {
+      "cod_cli": 33817953,
+      "faturado_2025": 3095.44,
+      "faturado_2026": 16828.07,
+      "variacao_pct": 443.64,
+      "rank": 255,
+      "participacao_pct": 0.04
+    },
+    {
+      "cod_cli": 6942059,
+      "faturado_2025": 40808.13,
+      "faturado_2026": 16427.41,
+      "variacao_pct": -59.74,
+      "rank": 257,
+      "participacao_pct": 0.04
+    },
+    {
+      "cod_cli": 14905627,
+      "faturado_2025": 37389.15,
+      "faturado_2026": 15804.18,
+      "variacao_pct": -57.73,
+      "rank": 258,
+      "participacao_pct": 0.04
+    },
+    {
+      "cod_cli": 17859944,
+      "faturado_2025": 29048.52,
+      "faturado_2026": 15580.1,
+      "variacao_pct": -46.37,
+      "rank": 260,
+      "participacao_pct": 0.04
+    },
+    {
+      "cod_cli": 41384387,
+      "faturado_2025": 3706.32,
+      "faturado_2026": 15512.6,
+      "variacao_pct": 318.54,
+      "rank": 261,
+      "participacao_pct": 0.04
+    },
+    {
+      "cod_cli": 14407825,
+      "faturado_2025": 17164.9,
+      "faturado_2026": 15475.95,
+      "variacao_pct": -9.84,
+      "rank": 263,
+      "participacao_pct": 0.04
+    },
+    {
+      "cod_cli": 4098902,
+      "faturado_2025": 11758.71,
+      "faturado_2026": 15105.15,
+      "variacao_pct": 28.46,
+      "rank": 264,
+      "participacao_pct": 0.04
+    },
+    {
+      "cod_cli": 83729681,
+      "faturado_2025": 12998.29,
+      "faturado_2026": 14488.33,
+      "variacao_pct": 11.46,
+      "rank": 266,
+      "participacao_pct": 0.04
+    },
+    {
+      "cod_cli": 8214442,
+      "faturado_2025": 16470.22,
+      "faturado_2026": 14280.13,
+      "variacao_pct": -13.3,
+      "rank": 267,
+      "participacao_pct": 0.04
+    },
+    {
+      "cod_cli": 7266816,
+      "faturado_2025": 31417.63,
+      "faturado_2026": 14196.19,
+      "variacao_pct": -54.81,
+      "rank": 268,
+      "participacao_pct": 0.04
+    },
+    {
+      "cod_cli": 42562162,
+      "faturado_2025": 5402.04,
+      "faturado_2026": 13877.05,
+      "variacao_pct": 156.89,
+      "rank": 271,
+      "participacao_pct": 0.03
+    },
+    {
+      "cod_cli": 57192639,
+      "faturado_2025": 9631.47,
+      "faturado_2026": 13513.01,
+      "variacao_pct": 40.3,
+      "rank": 274,
+      "participacao_pct": 0.03
+    },
+    {
+      "cod_cli": 36714542,
+      "faturado_2025": 0.0,
+      "faturado_2026": 13156.22,
+      "variacao_pct": 100.0,
+      "rank": 275,
+      "participacao_pct": 0.03
+    },
+    {
+      "cod_cli": 47789435,
+      "faturado_2025": 14866.24,
+      "faturado_2026": 12751.9,
+      "variacao_pct": -14.22,
+      "rank": 276,
+      "participacao_pct": 0.03
+    },
+    {
+      "cod_cli": 38343464,
+      "faturado_2025": 13339.55,
+      "faturado_2026": 12431.51,
+      "variacao_pct": -6.81,
+      "rank": 277,
+      "participacao_pct": 0.03
+    },
+    {
+      "cod_cli": 82104563,
+      "faturado_2025": 10253.28,
+      "faturado_2026": 12415.4,
+      "variacao_pct": 21.09,
+      "rank": 278,
+      "participacao_pct": 0.03
+    },
+    {
+      "cod_cli": 22557956,
+      "faturado_2025": 11083.29,
+      "faturado_2026": 12008.75,
+      "variacao_pct": 8.35,
+      "rank": 279,
+      "participacao_pct": 0.03
+    },
+    {
+      "cod_cli": 2228279,
+      "faturado_2025": 11950.99,
+      "faturado_2026": 11995.02,
+      "variacao_pct": 0.37,
+      "rank": 280,
+      "participacao_pct": 0.03
+    },
+    {
+      "cod_cli": 9458127,
+      "faturado_2025": 13160.49,
+      "faturado_2026": 11796.17,
+      "variacao_pct": -10.37,
+      "rank": 281,
+      "participacao_pct": 0.03
+    },
+    {
+      "cod_cli": 50493727,
+      "faturado_2025": 0.0,
+      "faturado_2026": 11549.65,
+      "variacao_pct": 100.0,
+      "rank": 282,
+      "participacao_pct": 0.03
+    },
+    {
+      "cod_cli": 58588358,
+      "faturado_2025": 0.0,
+      "faturado_2026": 11480.15,
+      "variacao_pct": 100.0,
+      "rank": 283,
+      "participacao_pct": 0.03
+    },
+    {
+      "cod_cli": 4408776,
+      "faturado_2025": 0.0,
+      "faturado_2026": 11434.6,
+      "variacao_pct": 100.0,
+      "rank": 284,
+      "participacao_pct": 0.03
+    },
+    {
+      "cod_cli": 49333240,
+      "faturado_2025": 0.0,
+      "faturado_2026": 11377.86,
+      "variacao_pct": 100.0,
+      "rank": 285,
+      "participacao_pct": 0.03
+    },
+    {
+      "cod_cli": 49633174,
+      "faturado_2025": 0.0,
+      "faturado_2026": 11252.22,
+      "variacao_pct": 100.0,
+      "rank": 286,
+      "participacao_pct": 0.03
+    },
+    {
+      "cod_cli": 14754161,
+      "faturado_2025": 11882.12,
+      "faturado_2026": 10910.24,
+      "variacao_pct": -8.18,
+      "rank": 287,
+      "participacao_pct": 0.03
+    },
+    {
+      "cod_cli": 79025904,
+      "faturado_2025": 22051.0,
+      "faturado_2026": 10725.29,
+      "variacao_pct": -51.36,
+      "rank": 288,
+      "participacao_pct": 0.03
+    },
+    {
+      "cod_cli": 63138008,
+      "faturado_2025": 0.0,
+      "faturado_2026": 10688.38,
+      "variacao_pct": 100.0,
+      "rank": 290,
+      "participacao_pct": 0.03
+    },
+    {
+      "cod_cli": 8969790,
+      "faturado_2025": 9003.3,
+      "faturado_2026": 10641.28,
+      "variacao_pct": 18.19,
+      "rank": 292,
+      "participacao_pct": 0.03
+    },
+    {
+      "cod_cli": 29488700,
+      "faturado_2025": 11902.52,
+      "faturado_2026": 10458.11,
+      "variacao_pct": -12.14,
+      "rank": 293,
+      "participacao_pct": 0.03
+    },
+    {
+      "cod_cli": 13615058,
+      "faturado_2025": 22099.32,
+      "faturado_2026": 10348.16,
+      "variacao_pct": -53.17,
+      "rank": 294,
+      "participacao_pct": 0.03
+    },
+    {
+      "cod_cli": 44562961,
+      "faturado_2025": 0.0,
+      "faturado_2026": 9819.0,
+      "variacao_pct": 100.0,
+      "rank": 296,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 43154799,
+      "faturado_2025": 2774.64,
+      "faturado_2026": 9727.77,
+      "variacao_pct": 250.6,
+      "rank": 297,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 17160818,
+      "faturado_2025": 4429.32,
+      "faturado_2026": 9467.89,
+      "variacao_pct": 113.75,
+      "rank": 299,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 19781695,
+      "faturado_2025": 0.0,
+      "faturado_2026": 8961.41,
+      "variacao_pct": 100.0,
+      "rank": 300,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 3858756,
+      "faturado_2025": 7084.82,
+      "faturado_2026": 8887.19,
+      "variacao_pct": 25.44,
+      "rank": 301,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 37267088,
+      "faturado_2025": 15426.85,
+      "faturado_2026": 8743.25,
+      "variacao_pct": -43.32,
+      "rank": 302,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 2979399,
+      "faturado_2025": 4486.32,
+      "faturado_2026": 8738.39,
+      "variacao_pct": 94.78,
+      "rank": 303,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 34646746,
+      "faturado_2025": 0.0,
+      "faturado_2026": 8725.21,
+      "variacao_pct": 100.0,
+      "rank": 304,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 21353184,
+      "faturado_2025": 0.0,
+      "faturado_2026": 8573.3,
+      "variacao_pct": 100.0,
+      "rank": 305,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 9007148,
+      "faturado_2025": 3340.04,
+      "faturado_2026": 8189.86,
+      "variacao_pct": 145.2,
+      "rank": 306,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 59693112,
+      "faturado_2025": 0.0,
+      "faturado_2026": 8148.83,
+      "variacao_pct": 100.0,
+      "rank": 307,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 43966318,
+      "faturado_2025": 14446.32,
+      "faturado_2026": 7927.32,
+      "variacao_pct": -45.13,
+      "rank": 308,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 67158843,
+      "faturado_2025": 0.0,
+      "faturado_2026": 7644.24,
+      "variacao_pct": 100.0,
+      "rank": 310,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 35129724,
+      "faturado_2025": 0.0,
+      "faturado_2026": 7428.38,
+      "variacao_pct": 100.0,
+      "rank": 311,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 58102862,
+      "faturado_2025": 10739.1,
+      "faturado_2026": 7355.92,
+      "variacao_pct": -31.5,
+      "rank": 312,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 48638923,
+      "faturado_2025": 13230.24,
+      "faturado_2026": 7187.95,
+      "variacao_pct": -45.67,
+      "rank": 313,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 36650080,
+      "faturado_2025": 42373.59,
+      "faturado_2026": 7181.38,
+      "variacao_pct": -83.05,
+      "rank": 314,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 16514190,
+      "faturado_2025": 43400.29,
+      "faturado_2026": 6959.95,
+      "variacao_pct": -83.96,
+      "rank": 315,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 75831867,
+      "faturado_2025": 6126.0,
+      "faturado_2026": 6935.23,
+      "variacao_pct": 13.21,
+      "rank": 316,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 72727167,
+      "faturado_2025": 3246.46,
+      "faturado_2026": 6825.87,
+      "variacao_pct": 110.26,
+      "rank": 317,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 28124792,
+      "faturado_2025": 5826.1,
+      "faturado_2026": 6748.97,
+      "variacao_pct": 15.84,
+      "rank": 319,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 24987862,
+      "faturado_2025": 29716.72,
+      "faturado_2026": 6627.96,
+      "variacao_pct": -77.7,
+      "rank": 320,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 42771483,
+      "faturado_2025": 3568.06,
+      "faturado_2026": 6561.37,
+      "variacao_pct": 83.89,
+      "rank": 321,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 79003414,
+      "faturado_2025": 7568.05,
+      "faturado_2026": 6561.35,
+      "variacao_pct": -13.3,
+      "rank": 322,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 31271934,
+      "faturado_2025": 0.0,
+      "faturado_2026": 6505.51,
+      "variacao_pct": 100.0,
+      "rank": 323,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 54724936,
+      "faturado_2025": 6527.25,
+      "faturado_2026": 6442.91,
+      "variacao_pct": -1.29,
+      "rank": 324,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 64854355,
+      "faturado_2025": 0.0,
+      "faturado_2026": 6327.07,
+      "variacao_pct": 100.0,
+      "rank": 325,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 13207214,
+      "faturado_2025": 17292.25,
+      "faturado_2026": 6219.13,
+      "variacao_pct": -64.04,
+      "rank": 326,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 8117308,
+      "faturado_2025": 0.0,
+      "faturado_2026": 6052.83,
+      "variacao_pct": 100.0,
+      "rank": 327,
+      "participacao_pct": 0.02
+    },
+    {
+      "cod_cli": 82576604,
+      "faturado_2025": 5448.12,
+      "faturado_2026": 5827.27,
+      "variacao_pct": 6.96,
+      "rank": 328,
+      "participacao_pct": 0.01
+    },
+    {
+      "cod_cli": 46061224,
+      "faturado_2025": 23116.09,
+      "faturado_2026": 5732.09,
+      "variacao_pct": -75.2,
+      "rank": 329,
+      "participacao_pct": 0.01
+    },
+    {
+      "cod_cli": 53554543,
+      "faturado_2025": 0.0,
+      "faturado_2026": 5417.16,
+      "variacao_pct": 100.0,
+      "rank": 330,
+      "participacao_pct": 0.01
+    },
+    {
+      "cod_cli": 35539060,
+      "faturado_2025": 22244.98,
+      "faturado_2026": 5398.0,
+      "variacao_pct": -75.73,
+      "rank": 331,
+      "participacao_pct": 0.01
+    },
+    {
+      "cod_cli": 17288031,
+      "faturado_2025": 8584.85,
+      "faturado_2026": 5154.53,
+      "variacao_pct": -39.96,
+      "rank": 332,
+      "participacao_pct": 0.01
+    },
+    {
+      "cod_cli": 30602466,
+      "faturado_2025": 8926.38,
+      "faturado_2026": 4788.5,
+      "variacao_pct": -46.36,
+      "rank": 333,
+      "participacao_pct": 0.01
+    },
+    {
+      "cod_cli": 15377164,
+      "faturado_2025": 0.0,
+      "faturado_2026": 4764.21,
+      "variacao_pct": 100.0,
+      "rank": 334,
+      "participacao_pct": 0.01
+    },
+    {
+      "cod_cli": 43061036,
+      "faturado_2025": 0.0,
+      "faturado_2026": 4726.58,
+      "variacao_pct": 100.0,
+      "rank": 335,
+      "participacao_pct": 0.01
+    },
+    {
+      "cod_cli": 27166139,
+      "faturado_2025": 0.0,
+      "faturado_2026": 4688.44,
+      "variacao_pct": 100.0,
+      "rank": 336,
+      "participacao_pct": 0.01
+    },
+    {
+      "cod_cli": 64756983,
+      "faturado_2025": 0.0,
+      "faturado_2026": 4557.64,
+      "variacao_pct": 100.0,
+      "rank": 337,
+      "participacao_pct": 0.01
+    },
+    {
+      "cod_cli": 37859075,
+      "faturado_2025": 5802.29,
+      "faturado_2026": 4547.52,
+      "variacao_pct": -21.63,
+      "rank": 338,
+      "participacao_pct": 0.01
+    },
+    {
+      "cod_cli": 62091670,
+      "faturado_2025": 0.0,
+      "faturado_2026": 4190.97,
+      "variacao_pct": 100.0,
+      "rank": 339,
+      "participacao_pct": 0.01
+    },
+    {
+      "cod_cli": 42436562,
+      "faturado_2025": 0.0,
+      "faturado_2026": 4173.59,
+      "variacao_pct": 100.0,
+      "rank": 340,
+      "participacao_pct": 0.01
+    },
+    {
+      "cod_cli": 30352648,
+      "faturado_2025": 0.0,
+      "faturado_2026": 3993.31,
+      "variacao_pct": 100.0,
+      "rank": 341,
+      "participacao_pct": 0.01
+    },
+    {
+      "cod_cli": 61061869,
+      "faturado_2025": 0.0,
+      "faturado_2026": 3705.5,
+      "variacao_pct": 100.0,
+      "rank": 343,
+      "participacao_pct": 0.01
+    },
+    {
+      "cod_cli": 54947076,
+      "faturado_2025": 16744.7,
+      "faturado_2026": 3448.76,
+      "variacao_pct": -79.4,
+      "rank": 344,
+      "participacao_pct": 0.01
+    },
+    {
+      "cod_cli": 7040569,
+      "faturado_2025": 0.0,
+      "faturado_2026": 2999.85,
+      "variacao_pct": 100.0,
+      "rank": 346,
+      "participacao_pct": 0.01
+    },
+    {
+      "cod_cli": 11193347,
+      "faturado_2025": 4599.17,
+      "faturado_2026": 2732.33,
+      "variacao_pct": -40.59,
+      "rank": 347,
+      "participacao_pct": 0.01
+    },
+    {
+      "cod_cli": 30467373,
+      "faturado_2025": 5382.95,
+      "faturado_2026": 2659.52,
+      "variacao_pct": -50.59,
+      "rank": 348,
+      "participacao_pct": 0.01
+    },
+    {
+      "cod_cli": 31029717,
+      "faturado_2025": 13018.03,
+      "faturado_2026": 2556.17,
+      "variacao_pct": -80.36,
+      "rank": 349,
+      "participacao_pct": 0.01
+    },
+    {
+      "cod_cli": 27589946,
+      "faturado_2025": 0.0,
+      "faturado_2026": 2448.75,
+      "variacao_pct": 100.0,
+      "rank": 350,
+      "participacao_pct": 0.01
+    },
+    {
+      "cod_cli": 49273490,
+      "faturado_2025": 21490.97,
+      "faturado_2026": 2007.47,
+      "variacao_pct": -90.66,
+      "rank": 351,
+      "participacao_pct": 0.01
+    },
+    {
+      "cod_cli": 67132926,
+      "faturado_2025": 0.0,
+      "faturado_2026": 1728.23,
+      "variacao_pct": 100.0,
+      "rank": 353,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 48466211,
+      "faturado_2025": 2460.12,
+      "faturado_2026": 1710.28,
+      "variacao_pct": -30.48,
+      "rank": 354,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 2145877,
+      "faturado_2025": 0.0,
+      "faturado_2026": 1630.17,
+      "variacao_pct": 100.0,
+      "rank": 355,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 27129950,
+      "faturado_2025": 18376.85,
+      "faturado_2026": 1520.63,
+      "variacao_pct": -91.73,
+      "rank": 357,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 76835198,
+      "faturado_2025": 36479.84,
+      "faturado_2026": 1511.56,
+      "variacao_pct": -95.86,
+      "rank": 358,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 51228774,
+      "faturado_2025": 22898.7,
+      "faturado_2026": 1183.07,
+      "variacao_pct": -94.83,
+      "rank": 360,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 50824099,
+      "faturado_2025": 3311.09,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 42323917,
+      "faturado_2025": 3226.77,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 28594591,
+      "faturado_2025": 1813.98,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 21756872,
+      "faturado_2025": 17354.23,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 12006856,
+      "faturado_2025": 25332.04,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 23275634,
+      "faturado_2025": 9156.64,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 2200501,
+      "faturado_2025": 40192.89,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 47347736,
+      "faturado_2025": 9936.71,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 73594558,
+      "faturado_2025": 6269.41,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 33830876,
+      "faturado_2025": 3961.24,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 33307353,
+      "faturado_2025": 9823.97,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 6091190,
+      "faturado_2025": 42876.87,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 51586470,
+      "faturado_2025": 120608.89,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 16870601,
+      "faturado_2025": 1970.91,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 41738027,
+      "faturado_2025": 2102.68,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 13573908,
+      "faturado_2025": 6252.92,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 82902834,
+      "faturado_2025": 3899.5,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 32308472,
+      "faturado_2025": 8246.71,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 5824741,
+      "faturado_2025": 3791.03,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 46273636,
+      "faturado_2025": 77335.85,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 48972240,
+      "faturado_2025": 45997.03,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 46468771,
+      "faturado_2025": 2870.02,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 59149226,
+      "faturado_2025": 8803.99,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 34008145,
+      "faturado_2025": 7289.75,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 57156035,
+      "faturado_2025": 11514.97,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 28756292,
+      "faturado_2025": 4239.52,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 39621861,
+      "faturado_2025": 9561.33,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 19253253,
+      "faturado_2025": 2070.79,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 11587119,
+      "faturado_2025": 13838.38,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 28893249,
+      "faturado_2025": 13544.01,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 11838642,
+      "faturado_2025": 18558.66,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 529052,
+      "faturado_2025": 3131.23,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 12023813,
+      "faturado_2025": 1410.27,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 22248136,
+      "faturado_2025": 159632.73,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 53353069,
+      "faturado_2025": 2721.13,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 30421668,
+      "faturado_2025": 2750.57,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 27538538,
+      "faturado_2025": 143929.08,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 10801332,
+      "faturado_2025": 2358.89,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 3063881,
+      "faturado_2025": 6274.99,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    {
+      "cod_cli": 73557365,
+      "faturado_2025": 3375.27,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    }
+  ],
+  "por_grupo": {
+    "GRUPO ROUPAS P/CICLISMO": {
+      "faturado_2025": 11595831.99,
+      "faturado_2026": 7907445.34,
+      "variacao_pct": -31.81,
+      "rank": 1,
+      "participacao_pct": 19.94
+    },
+    "GRUPO FREE ACTION": {
+      "faturado_2025": 6287634.08,
+      "faturado_2026": 4580198.28,
+      "variacao_pct": -27.16,
+      "rank": 2,
+      "participacao_pct": 11.55
+    },
+    "GRUPO BIKE POINT": {
+      "faturado_2025": 884627.65,
+      "faturado_2026": 1543214.1,
+      "variacao_pct": 74.45,
+      "rank": 3,
+      "participacao_pct": 3.89
+    },
+    "GRUPO COLINA BIKES": {
+      "faturado_2025": 711902.86,
+      "faturado_2026": 979383.1,
+      "variacao_pct": 37.57,
+      "rank": 4,
+      "participacao_pct": 2.47
+    },
+    "GRUPO BR BALANCE": {
+      "faturado_2025": 824485.41,
+      "faturado_2026": 787135.81,
+      "variacao_pct": -4.53,
+      "rank": 5,
+      "participacao_pct": 1.99
+    },
+    "GRUPO MB BIKE": {
+      "faturado_2025": 2473455.4,
+      "faturado_2026": 774710.33,
+      "variacao_pct": -68.68,
+      "rank": 6,
+      "participacao_pct": 1.95
+    },
+    "GRUPO CLEVERSON": {
+      "faturado_2025": 930874.54,
+      "faturado_2026": 724089.37,
+      "variacao_pct": -22.21,
+      "rank": 7,
+      "participacao_pct": 1.83
+    },
+    "GRUPO ERIC HAENSEL": {
+      "faturado_2025": 465492.02,
+      "faturado_2026": 685300.09,
+      "variacao_pct": 47.22,
+      "rank": 9,
+      "participacao_pct": 1.73
+    },
+    "GRUPO BIMOTO": {
+      "faturado_2025": 655450.49,
+      "faturado_2026": 564483.04,
+      "variacao_pct": -13.88,
+      "rank": 10,
+      "participacao_pct": 1.42
+    },
+    "GRUPO BRANDO BIKE": {
+      "faturado_2025": 835364.22,
+      "faturado_2026": 564382.72,
+      "variacao_pct": -32.44,
+      "rank": 11,
+      "participacao_pct": 1.42
+    },
+    "GRUPO FELIPE MARANGONI": {
+      "faturado_2025": 576939.88,
+      "faturado_2026": 550599.4,
+      "variacao_pct": -4.57,
+      "rank": 12,
+      "participacao_pct": 1.39
+    },
+    "GRUPO DALANNIO BIKE": {
+      "faturado_2025": 615288.56,
+      "faturado_2026": 505186.14,
+      "variacao_pct": -17.89,
+      "rank": 13,
+      "participacao_pct": 1.27
+    },
+    "GRUPO SERGIO ESPINDOLA": {
+      "faturado_2025": 536247.68,
+      "faturado_2026": 483699.44,
+      "variacao_pct": -9.8,
+      "rank": 14,
+      "participacao_pct": 1.22
+    },
+    "GRUPO SB COMERCIO": {
+      "faturado_2025": 598747.35,
+      "faturado_2026": 465856.41,
+      "variacao_pct": -22.19,
+      "rank": 16,
+      "participacao_pct": 1.17
+    },
+    "GRUPO CASA ARY": {
+      "faturado_2025": 412669.49,
+      "faturado_2026": 460542.04,
+      "variacao_pct": 11.6,
+      "rank": 17,
+      "participacao_pct": 1.16
+    },
+    "GRUPO PEDALAR": {
+      "faturado_2025": 577141.2,
+      "faturado_2026": 286823.81,
+      "variacao_pct": -50.3,
+      "rank": 22,
+      "participacao_pct": 0.72
+    },
+    "GRUPO NTZ BIKE": {
+      "faturado_2025": 733172.13,
+      "faturado_2026": 200978.46,
+      "variacao_pct": -72.59,
+      "rank": 26,
+      "participacao_pct": 0.51
+    },
+    "GRUPO POWER BIKES": {
+      "faturado_2025": 178674.24,
+      "faturado_2026": 187689.79,
+      "variacao_pct": 5.05,
+      "rank": 30,
+      "participacao_pct": 0.47
+    },
+    "GRUPO JR BIC.LTDA": {
+      "faturado_2025": 115539.29,
+      "faturado_2026": 175101.29,
+      "variacao_pct": 51.55,
+      "rank": 33,
+      "participacao_pct": 0.44
+    },
+    "GRUPO ERHARDT": {
+      "faturado_2025": 156437.51,
+      "faturado_2026": 165585.84,
+      "variacao_pct": 5.85,
+      "rank": 35,
+      "participacao_pct": 0.42
+    },
+    "GRUPO HINSCHING": {
+      "faturado_2025": 181896.47,
+      "faturado_2026": 163274.35,
+      "variacao_pct": -10.24,
+      "rank": 36,
+      "participacao_pct": 0.41
+    },
+    "GRUPO RAPHAEL MARTINS": {
+      "faturado_2025": 233041.05,
+      "faturado_2026": 159970.03,
+      "variacao_pct": -31.36,
+      "rank": 37,
+      "participacao_pct": 0.4
+    },
+    "GRUPO NATHOR": {
+      "faturado_2025": 3423.32,
+      "faturado_2026": 154148.78,
+      "variacao_pct": 4402.9,
+      "rank": 40,
+      "participacao_pct": 0.39
+    },
+    "GRUPO 4BIKE": {
+      "faturado_2025": 50143.29,
+      "faturado_2026": 143812.6,
+      "variacao_pct": 186.8,
+      "rank": 43,
+      "participacao_pct": 0.36
+    },
+    "GRUPO JAIME PEDRO": {
+      "faturado_2025": 211522.68,
+      "faturado_2026": 136154.32,
+      "variacao_pct": -35.63,
+      "rank": 45,
+      "participacao_pct": 0.34
+    },
+    "GRUPO SHOP BIKE TUBARAO": {
+      "faturado_2025": 64583.45,
+      "faturado_2026": 134530.64,
+      "variacao_pct": 108.31,
+      "rank": 48,
+      "participacao_pct": 0.34
+    },
+    "GRUPO SOS CICLE": {
+      "faturado_2025": 251709.15,
+      "faturado_2026": 130144.41,
+      "variacao_pct": -48.3,
+      "rank": 51,
+      "participacao_pct": 0.33
+    },
+    "GRUPO GABRIELA DE OLIV": {
+      "faturado_2025": 17412.44,
+      "faturado_2026": 120319.07,
+      "variacao_pct": 590.99,
+      "rank": 57,
+      "participacao_pct": 0.3
+    },
+    "GRUPO BIKE LIMEIRA": {
+      "faturado_2025": 175282.23,
+      "faturado_2026": 108469.48,
+      "variacao_pct": -38.12,
+      "rank": 61,
+      "participacao_pct": 0.27
+    },
+    "GRUPO CELSO BIKE (cód. 85032)": {
+      "faturado_2025": 0.0,
+      "faturado_2026": 100908.44,
+      "variacao_pct": 100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    "GRUPO BATATA": {
+      "faturado_2025": 96754.26,
+      "faturado_2026": 94896.49,
+      "variacao_pct": -1.92,
+      "rank": 66,
+      "participacao_pct": 0.24
+    },
+    "GRUPO PAULO CEZAR": {
+      "faturado_2025": 125831.9,
+      "faturado_2026": 92279.51,
+      "variacao_pct": -26.66,
+      "rank": 71,
+      "participacao_pct": 0.23
+    },
+    "GRUPO RP BIKES": {
+      "faturado_2025": 113650.36,
+      "faturado_2026": 92269.23,
+      "variacao_pct": -18.81,
+      "rank": 72,
+      "participacao_pct": 0.23
+    },
+    "GRUPO MONOCROSS": {
+      "faturado_2025": 94320.75,
+      "faturado_2026": 89903.29,
+      "variacao_pct": -4.68,
+      "rank": 75,
+      "participacao_pct": 0.23
+    },
+    "GRUPO DARIEN": {
+      "faturado_2025": 135592.11,
+      "faturado_2026": 87718.46,
+      "variacao_pct": -35.31,
+      "rank": 79,
+      "participacao_pct": 0.22
+    },
+    "GRUPO ELIEZER CENTER": {
+      "faturado_2025": 51449.08,
+      "faturado_2026": 78897.33,
+      "variacao_pct": 53.35,
+      "rank": 86,
+      "participacao_pct": 0.2
+    },
+    "GRUPO FR BIKE": {
+      "faturado_2025": 45140.13,
+      "faturado_2026": 77072.83,
+      "variacao_pct": 70.74,
+      "rank": 87,
+      "participacao_pct": 0.19
+    },
+    "GRUPO WANDERLEI": {
+      "faturado_2025": 134368.42,
+      "faturado_2026": 76056.56,
+      "variacao_pct": -43.4,
+      "rank": 88,
+      "participacao_pct": 0.19
+    },
+    "GRUPO MARLISE": {
+      "faturado_2025": 62244.65,
+      "faturado_2026": 59818.72,
+      "variacao_pct": -3.9,
+      "rank": 105,
+      "participacao_pct": 0.15
+    },
+    "GRUPO PROIMPORT": {
+      "faturado_2025": 3100.4,
+      "faturado_2026": 54471.74,
+      "variacao_pct": 1656.93,
+      "rank": 116,
+      "participacao_pct": 0.14
+    },
+    "GRUPO GREFT": {
+      "faturado_2025": 52473.62,
+      "faturado_2026": 51546.6,
+      "variacao_pct": -1.77,
+      "rank": 122,
+      "participacao_pct": 0.13
+    },
+    "GRUPO ARO E RODA": {
+      "faturado_2025": 42214.94,
+      "faturado_2026": 50501.14,
+      "variacao_pct": 19.63,
+      "rank": 123,
+      "participacao_pct": 0.13
+    },
+    "GRUPO BIC.MELEIRO": {
+      "faturado_2025": 70593.94,
+      "faturado_2026": 43753.07,
+      "variacao_pct": -38.02,
+      "rank": 131,
+      "participacao_pct": 0.11
+    },
+    "GRUPO W.B.BICICLETAS": {
+      "faturado_2025": 68401.43,
+      "faturado_2026": 40412.36,
+      "variacao_pct": -40.92,
+      "rank": 142,
+      "participacao_pct": 0.1
+    },
+    "GRUPO BIKE DREAM": {
+      "faturado_2025": 81078.19,
+      "faturado_2026": 39967.4,
+      "variacao_pct": -50.71,
+      "rank": 143,
+      "participacao_pct": 0.1
+    },
+    "GRUPO LUCAS": {
+      "faturado_2025": 33545.63,
+      "faturado_2026": 36565.06,
+      "variacao_pct": 9.0,
+      "rank": 151,
+      "participacao_pct": 0.09
+    },
+    "GRUPO SANTOS BIKE": {
+      "faturado_2025": 62301.0,
+      "faturado_2026": 36388.78,
+      "variacao_pct": -41.59,
+      "rank": 152,
+      "participacao_pct": 0.09
+    },
+    "GRUPO HOFFMANN": {
+      "faturado_2025": 43613.29,
+      "faturado_2026": 34827.48,
+      "variacao_pct": -20.14,
+      "rank": 158,
+      "participacao_pct": 0.09
+    },
+    "GRUPO TUNNING": {
+      "faturado_2025": 100669.05,
+      "faturado_2026": 34646.87,
+      "variacao_pct": -65.58,
+      "rank": 159,
+      "participacao_pct": 0.09
+    },
+    "GRUPO BRUNA TENFEN": {
+      "faturado_2025": 39028.53,
+      "faturado_2026": 33147.34,
+      "variacao_pct": -15.07,
+      "rank": 166,
+      "participacao_pct": 0.08
+    },
+    "GRUPO CELSO BIKE (cód. 20029)": {
+      "faturado_2025": 5250.05,
+      "faturado_2026": 32988.02,
+      "variacao_pct": 528.34,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    "GRUPO SID BIKES": {
+      "faturado_2025": 22053.29,
+      "faturado_2026": 31773.79,
+      "variacao_pct": 44.08,
+      "rank": 171,
+      "participacao_pct": 0.08
+    },
+    "GRUPO ALEXANDRE RODRIGUES": {
+      "faturado_2025": 26318.81,
+      "faturado_2026": 31684.7,
+      "variacao_pct": 20.39,
+      "rank": 172,
+      "participacao_pct": 0.08
+    },
+    "GRUPO ANTONIO PEDRO": {
+      "faturado_2025": 32043.12,
+      "faturado_2026": 28736.48,
+      "variacao_pct": -10.32,
+      "rank": 180,
+      "participacao_pct": 0.07
+    },
+    "GRUPO BERTOLDO": {
+      "faturado_2025": 18358.81,
+      "faturado_2026": 28329.14,
+      "variacao_pct": 54.31,
+      "rank": 182,
+      "participacao_pct": 0.07
+    },
+    "GRUPO JK BIKE": {
+      "faturado_2025": 99434.68,
+      "faturado_2026": 25452.82,
+      "variacao_pct": -74.4,
+      "rank": 193,
+      "participacao_pct": 0.06
+    },
+    "GRUPO JC BIKE": {
+      "faturado_2025": 8450.64,
+      "faturado_2026": 25421.03,
+      "variacao_pct": 200.82,
+      "rank": 194,
+      "participacao_pct": 0.06
+    },
+    "GRUPO ANELIZE": {
+      "faturado_2025": 54546.48,
+      "faturado_2026": 23141.44,
+      "variacao_pct": -57.57,
+      "rank": 213,
+      "participacao_pct": 0.06
+    },
+    "GRUPO SPORT CICLE": {
+      "faturado_2025": 22482.85,
+      "faturado_2026": 22983.1,
+      "variacao_pct": 2.23,
+      "rank": 216,
+      "participacao_pct": 0.06
+    },
+    "GRUPO MAD BIKES": {
+      "faturado_2025": 25266.03,
+      "faturado_2026": 22740.76,
+      "variacao_pct": -9.99,
+      "rank": 217,
+      "participacao_pct": 0.06
+    },
+    "GRUPO TEOBAR": {
+      "faturado_2025": 23824.26,
+      "faturado_2026": 22705.12,
+      "variacao_pct": -4.7,
+      "rank": 218,
+      "participacao_pct": 0.06
+    },
+    "GRUPO JORGE HAMILTON": {
+      "faturado_2025": 35196.9,
+      "faturado_2026": 21612.55,
+      "variacao_pct": -38.6,
+      "rank": 227,
+      "participacao_pct": 0.05
+    },
+    "GRUPO MARLON GERHARD": {
+      "faturado_2025": 24966.94,
+      "faturado_2026": 21481.84,
+      "variacao_pct": -13.96,
+      "rank": 228,
+      "participacao_pct": 0.05
+    },
+    "GRUPO BIKE WAY": {
+      "faturado_2025": 15089.88,
+      "faturado_2026": 19987.27,
+      "variacao_pct": 32.45,
+      "rank": 238,
+      "participacao_pct": 0.05
+    },
+    "GRUPO OFICINA DE BIC.": {
+      "faturado_2025": 24856.46,
+      "faturado_2026": 19393.14,
+      "variacao_pct": -21.98,
+      "rank": 242,
+      "participacao_pct": 0.05
+    },
+    "GRUPO MBS": {
+      "faturado_2025": 8337.84,
+      "faturado_2026": 16885.33,
+      "variacao_pct": 102.51,
+      "rank": 254,
+      "participacao_pct": 0.04
+    },
+    "GRUPO ADELICIO": {
+      "faturado_2025": 39235.7,
+      "faturado_2026": 16591.97,
+      "variacao_pct": -57.71,
+      "rank": 256,
+      "participacao_pct": 0.04
+    },
+    "GRUPO EIKE BIKE": {
+      "faturado_2025": 0.0,
+      "faturado_2026": 15611.6,
+      "variacao_pct": 100.0,
+      "rank": 259,
+      "participacao_pct": 0.04
+    },
+    "GRUPO K7 COMERCIO": {
+      "faturado_2025": 14099.94,
+      "faturado_2026": 15491.22,
+      "variacao_pct": 9.87,
+      "rank": 262,
+      "participacao_pct": 0.04
+    },
+    "GRUPO GABRIEL BIC": {
+      "faturado_2025": 70101.6,
+      "faturado_2026": 14871.68,
+      "variacao_pct": -78.79,
+      "rank": 265,
+      "participacao_pct": 0.04
+    },
+    "GRUPO LEONARDO RACHADEL": {
+      "faturado_2025": 6581.22,
+      "faturado_2026": 14056.26,
+      "variacao_pct": 113.58,
+      "rank": 269,
+      "participacao_pct": 0.04
+    },
+    "GRUPO PLANETA IMP BIKE": {
+      "faturado_2025": 12826.99,
+      "faturado_2026": 14055.7,
+      "variacao_pct": 9.58,
+      "rank": 270,
+      "participacao_pct": 0.04
+    },
+    "GRUPO USO BIKE": {
+      "faturado_2025": 31550.01,
+      "faturado_2026": 13852.43,
+      "variacao_pct": -56.09,
+      "rank": 272,
+      "participacao_pct": 0.03
+    },
+    "GRUPO ANGELICA VASCONCELLOS": {
+      "faturado_2025": 11524.67,
+      "faturado_2026": 13728.75,
+      "variacao_pct": 19.12,
+      "rank": 273,
+      "participacao_pct": 0.03
+    },
+    "GRUPO S L MOTOS": {
+      "faturado_2025": 33931.2,
+      "faturado_2026": 10716.48,
+      "variacao_pct": -68.42,
+      "rank": 289,
+      "participacao_pct": 0.03
+    },
+    "GRUPO NT BIKE": {
+      "faturado_2025": 10344.95,
+      "faturado_2026": 10671.48,
+      "variacao_pct": 3.16,
+      "rank": 291,
+      "participacao_pct": 0.03
+    },
+    "GRUPO KIENEN": {
+      "faturado_2025": 13820.27,
+      "faturado_2026": 10177.77,
+      "variacao_pct": -26.36,
+      "rank": 295,
+      "participacao_pct": 0.03
+    },
+    "GRUPO VR7": {
+      "faturado_2025": 13067.29,
+      "faturado_2026": 9662.35,
+      "variacao_pct": -26.06,
+      "rank": 298,
+      "participacao_pct": 0.02
+    },
+    "GRUPO VOLTOLINI": {
+      "faturado_2025": 10704.98,
+      "faturado_2026": 7745.85,
+      "variacao_pct": -27.64,
+      "rank": 309,
+      "participacao_pct": 0.02
+    },
+    "GRUPO WORLD": {
+      "faturado_2025": 13034.93,
+      "faturado_2026": 6784.29,
+      "variacao_pct": -47.95,
+      "rank": 318,
+      "participacao_pct": 0.02
+    },
+    "GRUPO BIKE FORCE": {
+      "faturado_2025": 8092.77,
+      "faturado_2026": 3969.62,
+      "variacao_pct": -50.95,
+      "rank": 342,
+      "participacao_pct": 0.01
+    },
+    "GRUPO OLIVEIRA": {
+      "faturado_2025": 16126.78,
+      "faturado_2026": 3020.69,
+      "variacao_pct": -81.27,
+      "rank": 345,
+      "participacao_pct": 0.01
+    },
+    "GRUPO GE ELETROS": {
+      "faturado_2025": 13750.37,
+      "faturado_2026": 1806.0,
+      "variacao_pct": -86.87,
+      "rank": 352,
+      "participacao_pct": 0.0
+    },
+    "GRUPO STOP BIKE": {
+      "faturado_2025": 3102.19,
+      "faturado_2026": 1621.89,
+      "variacao_pct": -47.72,
+      "rank": 356,
+      "participacao_pct": 0.0
+    },
+    "GRUPO ALAERCIO ALVES": {
+      "faturado_2025": 15667.46,
+      "faturado_2026": 1503.73,
+      "variacao_pct": -90.4,
+      "rank": 359,
+      "participacao_pct": 0.0
+    },
+    "GRUPO DELA VEDOVA": {
+      "faturado_2025": 5561.62,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    "GRUPO GARAGE BIKE": {
+      "faturado_2025": 3982.8,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    "GRUPO FERNANDO SENEM": {
+      "faturado_2025": 13603.19,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    "GRUPO CATATAU BIKE": {
+      "faturado_2025": 9662.72,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    "GRUPO GPS COM": {
+      "faturado_2025": 21699.14,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    "GRUPO DICEART": {
+      "faturado_2025": 1500.03,
+      "faturado_2026": 0.0,
+      "variacao_pct": -100.0,
+      "rank": null,
+      "participacao_pct": 0.0
+    },
+    "GRUPO JEFERSON JOINVILLE": {
+      "faturado_2025": 87530.68,
+      "faturado_2026": 131778.82,
+      "variacao_pct": 50.55,
+      "rank": 49,
+      "participacao_pct": 0.33
+    }
+  },
+  "sem_faturamento_2026_cod_cli": [
+    41738027,
+    83646984,
+    28893249,
+    55908027,
+    59922242,
+    9483479,
+    16870601,
+    36855667,
+    34008145,
+    31432357,
+    73557365,
+    22248136,
+    57124930,
+    41160911,
+    55023919,
+    12958665,
+    6091190,
+    23907266,
+    46468771,
+    59149226,
+    44741812,
+    13573908,
+    46273636,
+    28594591,
+    21756872,
+    40020127,
+    31946998,
+    48045574,
+    64213001,
+    49874306,
+    36835378,
+    12006856,
+    48239599,
+    23275634,
+    62213956,
+    65417590,
+    11587119,
+    31300493,
+    53353069,
+    27538538,
+    18369626,
+    57156035,
+    47347736,
+    55461838,
+    46950208,
+    2200501,
+    33830876,
+    41092654,
+    39621861,
+    73594558,
+    49753392,
+    45974067,
+    48972240,
+    27890627,
+    53633246,
+    52889100,
+    529052,
+    8942956,
+    30894721,
+    19253253,
+    42383801,
+    66268648,
+    44530589,
+    30421668,
+    28756292,
+    26522208,
+    61206476,
+    59633072,
+    23302737,
+    37916720,
+    44898207,
+    28348168,
+    54512302,
+    5824741,
+    42323917,
+    10801332,
+    82902834,
+    51586470,
+    32986920,
+    37020710,
+    25018008,
+    50824099,
+    35732771,
+    3063881,
+    29635644,
+    32308472,
+    12023813,
+    33307353,
+    82695271
+  ],
+  "resumo_geral": {
+    "faturamento_anual": [
+      {
+        "ano": 2023,
+        "total": 77877189.0
+      },
+      {
+        "ano": 2024,
+        "total": 62002070.0,
+        "variacao_pct": -20.38
+      },
+      {
+        "ano": 2025,
+        "total": 71963357.0,
+        "variacao_pct": 16.07
+      }
+    ],
+    "faturamento_mensal": {
+      "meses": [
+        "Janeiro",
+        "Fevereiro",
+        "Março",
+        "Abril",
+        "Maio",
+        "Junho",
+        "Julho",
+        "Agosto"
+      ],
+      "2025": [
+        6047682.0,
+        6625421.0,
+        5416888.0,
+        5953468.0,
+        6019690.0,
+        4721868.0,
+        4402611.0,
+        10247245.0
+      ],
+      "2026": [
+        6009389.0,
+        4730245.0,
+        6109381.0,
+        5460717.0,
+        4612323.0,
+        3583592.0,
+        2830092.0,
+        6316420.0
+      ],
+      "variacao_pct": [
+        -0.63,
+        -28.6,
+        12.78,
+        -8.28,
+        -23.38,
+        -24.11,
+        -35.72,
+        -38.36
+      ],
+      "acumulado_2025": 49434873.0,
+      "acumulado_2026": 39652159.0,
+      "acumulado_variacao_pct": -19.79
+    }
+  }
+}

@@ -1,0 +1,658 @@
+[
+  {
+    "nome": "GRUPO JEFERSON JOINVILLE",
+    "clientes": [
+      {
+        "cod_cli": 19597253,
+        "razao": "SIRLANGE MARIA SCALZAVARA NASCIMENTO"
+      },
+      {
+        "cod_cli": 26129649,
+        "razao": "JEFERSON COSTA NASCIMENTO"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO 4BIKE",
+    "clientes": [
+      {
+        "cod_cli": 24003670,
+        "razao": "4BIKE SHOP LTDA"
+      },
+      {
+        "cod_cli": 62873882,
+        "razao": "NEXTYA E-COMMERCE LTDA"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO JR BIC.LTDA",
+    "clientes": [
+      {
+        "cod_cli": 52191444,
+        "razao": "BIKE TECH BLUMENAU LTDA"
+      },
+      {
+        "cod_cli": 46560534,
+        "razao": "JR BICICLETAS LTDA"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO BR BALANCE",
+    "clientes": [
+      {
+        "cod_cli": 33882888,
+        "razao": "BR BALANCE BIKES LTDA"
+      },
+      {
+        "cod_cli": 33292807,
+        "razao": "JACI BIKES LTDA"
+      },
+      {
+        "cod_cli": 5938471,
+        "razao": "LMZ COM E REPRES.LTDA"
+      },
+      {
+        "cod_cli": 39233335,
+        "razao": "SCAPE BIKES LTDA"
+      },
+      {
+        "cod_cli": 46463528,
+        "razao": "FOCO BIKES COMERCIO DE BICICLETAS LTDA"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO MB BIKE",
+    "clientes": [
+      {
+        "cod_cli": 46811449,
+        "razao": "MC BIKES ARAQUARI LTDA"
+      },
+      {
+        "cod_cli": 22384584,
+        "razao": "MANABEL MOISES MOREIRA (MB BIKE)"
+      },
+      {
+        "cod_cli": 30258509,
+        "razao": "MC BIKES LTDA (Rua Seis de Janeiro)"
+      },
+      {
+        "cod_cli": 52479984,
+        "razao": "MC BIKES LTDA (Rua Boehmerwald)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO FELIPE MARANGONI",
+    "clientes": [
+      {
+        "cod_cli": 39622748,
+        "razao": "FELIPE MARANGONI (ROX BIKE SHOP)"
+      },
+      {
+        "cod_cli": 57270010,
+        "razao": "LARISSA JURK LTDA"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO ROUPAS P/CICLISMO",
+    "clientes": [
+      {
+        "cod_cli": 18831642,
+        "razao": "RPC COMERCIO DE ARTIGOS ESPORTIVOS LTDA (RPC BIKE STORE)"
+      },
+      {
+        "cod_cli": 25072922,
+        "razao": "ROUPAS PARA CICLISMO WEBSTORE LTDA"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO FREE ACTION",
+    "clientes": [
+      {
+        "cod_cli": 28643004,
+        "razao": "FREE ACTION MONTADORA DE BICICLETAS LTDA (LOJA DE FABRICA FREE ACTION)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO BIKE POINT",
+    "clientes": [
+      {
+        "cod_cli": 4905792,
+        "razao": "BIKE POINT COMERCIO DE BICICLETAS E PECAS EIRELI (BIKE POINT)"
+      },
+      {
+        "cod_cli": 33735357,
+        "razao": "CARBON COMERCIO DE BICICLETAS E PECAS"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO COLINA BIKES",
+    "clientes": [
+      {
+        "cod_cli": 18280940,
+        "razao": "COLINA BIKE CENTER LTDA (COLINA BIKES)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO ERIC HAENSEL",
+    "clientes": [
+      {
+        "cod_cli": 41050789,
+        "razao": "ERIC HAENSEL SERVICOS DE PECAS E ACESSORIOS LTDA (ERIC BIKE)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO CLEVERSON",
+    "clientes": [
+      {
+        "cod_cli": 24137917,
+        "razao": "CLEVERSON EVANDRO DA SILVA ROSA (STYLO BIKE)"
+      },
+      {
+        "cod_cli": 32918629,
+        "razao": "DISTRIBUIDORA IRMAOS SCHMIDT LTDA"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO BIMOTO",
+    "clientes": [
+      {
+        "cod_cli": 73416331,
+        "razao": "BIMOTO PECAS E BICICLETAS LTDA (BIMOTO)"
+      },
+      {
+        "cod_cli": 10662597,
+        "razao": "EDER BERGMANN LAURINDO EIRELI (CIA DO PEDAL)"
+      },
+      {
+        "cod_cli": 1834686,
+        "razao": "RODRIGO BERGMANN LAURINDO (CICLOSUL)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO CASA ARY",
+    "clientes": [
+      {
+        "cod_cli": 7215865,
+        "razao": "CASA ARY COMERCIO DE BICICLETAS LTDA (CASA ARY)"
+      },
+      {
+        "cod_cli": 43550858,
+        "razao": "HUGO BIKE LTDA"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO SERGIO ESPINDOLA",
+    "clientes": [
+      {
+        "cod_cli": 780432,
+        "razao": "SERGIO ESPINDOLA DOS SANTOS (BIKE D LUCAS)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO ERHARDT",
+    "clientes": [
+      {
+        "cod_cli": 10202003,
+        "razao": "SIDNEI ERHARDT CARDOSO ME (CYCLOTECH)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO NATHOR",
+    "clientes": [
+      {
+        "cod_cli": 4039380,
+        "razao": "NATHOR IND.E COMERCIO DE BIC.LTDA (NATHOR)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO SHOP BIKE TUBARAO",
+    "clientes": [
+      {
+        "cod_cli": 13140533,
+        "razao": "JLF COMERCIO DE BICICLETAS LTDA EPP (SHOP BIKE TUBARAO)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO JAIME PEDRO",
+    "clientes": [
+      {
+        "cod_cli": 4973045,
+        "razao": "JAIME PEDRO TURNES E CIA LTDA. (TURNES BIKE SHOP)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO SOS CICLE",
+    "clientes": [
+      {
+        "cod_cli": 39774188,
+        "razao": "SF BIKES LTDA (SOS BIKES)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO HINSCHING",
+    "clientes": [
+      {
+        "cod_cli": 54391322,
+        "razao": "HINSCHING BIKES LTDA (HINSCHING BIKES)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO 4BIKE",
+    "clientes": [
+      {
+        "cod_cli": 24003670,
+        "razao": "4BIKE SHOP LTDA (4BIKE SHOP)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO BIKE LIMEIRA",
+    "clientes": [
+      {
+        "cod_cli": 81512501,
+        "razao": "BIKE LIMEIRA COMERCIO DE BICICLETAS LTDA (BIKE LIMEIRA)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO DARIEN",
+    "clientes": [
+      {
+        "cod_cli": 19038898,
+        "razao": "DARIEN SPORTS LTDA (DARIENS BIKE SHOP)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO MONOCROSS",
+    "clientes": [
+      {
+        "cod_cli": 79901203,
+        "razao": "MONOCROSS OFICINA DE BICICLETAS LTDA ME (MONOCROSS)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO PROIMPORT",
+    "clientes": [
+      {
+        "cod_cli": 3861474,
+        "razao": "PROIMPORT BRASIL S.A (PROIMPORT BRASIL)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO ELIEZER CENTER",
+    "clientes": [
+      {
+        "cod_cli": 41587961,
+        "razao": "ELIEZER FERREIRA CAMILO 08593830919 (ELIEZER CENTER BIKE)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO ARO E RODA",
+    "clientes": [
+      {
+        "cod_cli": 82923137,
+        "razao": "RAIO  E RODA LTDA (ARO E RODA)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO BIC.MELEIRO",
+    "clientes": [
+      {
+        "cod_cli": 1329152,
+        "razao": "COMERCIO E OFIC.DE BIC.MELEIRO LTDA (EDVANIO BIKE)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO TUNNING",
+    "clientes": [
+      {
+        "cod_cli": 21589561,
+        "razao": "R.R.TUNNING COM.LTDA EPP (BOX TUNNING)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO BIKE DREAM",
+    "clientes": [
+      {
+        "cod_cli": 95887311,
+        "razao": "VIACAR BIKE DREAM LOCACAO E COM LTDA (BIKE DREAM)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO HOFFMANN",
+    "clientes": [
+      {
+        "cod_cli": 28721469,
+        "razao": "HOFFMANN COM. DE BIC. EIRELI ME (CICLES HOFFMANN)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO SID BIKES",
+    "clientes": [
+      {
+        "cod_cli": 24833866,
+        "razao": "SID BIKES LTDA (SID BIKES)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO MARLON GERHARD",
+    "clientes": [
+      {
+        "cod_cli": 37013082,
+        "razao": "MARLON GERHARD BANDLER BIKES (MMGB BIKES)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO LEONARDO RACHADEL",
+    "clientes": [
+      {
+        "cod_cli": 190556,
+        "razao": "LEONARDO RACHADEL RODRIGUES EPP (CICLE GUCKERT)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO ANGELICA VASCONCELLOS",
+    "clientes": [
+      {
+        "cod_cli": 29699459,
+        "razao": "ANGELICA VASCONCELLOS POMPERMAIER MUNDEL"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO VR7",
+    "clientes": [
+      {
+        "cod_cli": 30548438,
+        "razao": "VR7 CICLES LTDA (VR7 BIKES)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO PLANETA IMP BIKE",
+    "clientes": [
+      {
+        "cod_cli": 28476264,
+        "razao": "PLANETA IMP. BIKE EIRELI ME (MUNDO DA BIKE)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO KIENEN",
+    "clientes": [
+      {
+        "cod_cli": 54667758,
+        "razao": "RICARDO KIENEN"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO WORLD",
+    "clientes": [
+      {
+        "cod_cli": 20190826,
+        "razao": "ALESSANDRA ESTEVES GUERRA GOMES (WORLD BIKE)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO STOP BIKE",
+    "clientes": [
+      {
+        "cod_cli": 81380024,
+        "razao": "STOP BIKE LTDA ME (STOP BIKE)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO ALAERCIO ALVES",
+    "clientes": [
+      {
+        "cod_cli": 49099140,
+        "razao": "ALAERCIO ALVES CORREIA (RODA LIVRE BIKE SHOP)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO ANTONIO PEDRO",
+    "clientes": [
+      {
+        "cod_cli": 54986581,
+        "razao": "ANTONIO PEDRO ALVES DE MORAES JUNIOR"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO JORGE HAMILTON",
+    "clientes": [
+      {
+        "cod_cli": 85375400,
+        "razao": "JORGE HAMILTON TURNES EPP"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO NTZ BIKE",
+    "clientes": [
+      {
+        "cod_cli": 54501009,
+        "razao": "NTZ BIKE LTDA (NTZ BIKE COMPANY)"
+      },
+      {
+        "cod_cli": 63078956,
+        "razao": "NTZ COMERCIO DE BIKE LTDA"
+      },
+      {
+        "cod_cli": 16553291,
+        "razao": "NTZ BIKE IMPORTACAO E COMERCIO LTDA (NTZ BIKE COMPANY)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO BRANDO BIKE",
+    "clientes": [
+      {
+        "cod_cli": 43522027,
+        "razao": "BRANDO BIKE MONTADORA E DISTRIBUIDORA DE BICICLETAS LTDA (BRANDO BIKE MONTADORA E DISTRIBUIDORA DE BICICLETAS)"
+      },
+      {
+        "cod_cli": 46057902,
+        "razao": "BRANDO BIKE LTDA (BRANDO BIKE)"
+      },
+      {
+        "cod_cli": 49750914,
+        "razao": "MARIA ROSELI MORETTI (BRANDO BIKE)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO BATATA",
+    "clientes": [
+      {
+        "cod_cli": 57545423,
+        "razao": "BICICLETARIA BATATA BIKE LTDA (BATATA BIKE)"
+      },
+      {
+        "cod_cli": 25103902,
+        "razao": "BATATA BIKE LTDA (BATATA BIKE)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO POWER BIKES",
+    "clientes": [
+      {
+        "cod_cli": 12057426,
+        "razao": "CLAUDIA CARMEN DE SOUZA (POWER BIKES)"
+      },
+      {
+        "cod_cli": 65417451,
+        "razao": "POWER BIKES GLORIA LTDA (POWER BIKES GLORIA)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO SB COMERCIO",
+    "clientes": [
+      {
+        "cod_cli": 17535300,
+        "razao": "SB COMERCIO DE PECAS PARA BICICLETAS LTDA"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO DALANNIO BIKE",
+    "clientes": [
+      {
+        "cod_cli": 9814607,
+        "razao": "DAL ANNIO BIKE LTDA"
+      },
+      {
+        "cod_cli": 6292748,
+        "razao": "MR COMERCIO DE BICICLETAS LTDA (BIKE AVENIDA)"
+      },
+      {
+        "cod_cli": 57611289,
+        "razao": "N G COMERCIO DE BICICLETAS LTDA (BIKE AVENIDA)"
+      },
+      {
+        "cod_cli": 412749,
+        "razao": "IRINESIO DAL ANNIO EIRELI"
+      },
+      {
+        "cod_cli": 2921040,
+        "razao": "ON COMERCIO DE BICICLETAS LTDA (DLANNIO BIKE)"
+      },
+      {
+        "cod_cli": 4639135,
+        "razao": "SONEY COMERCIO DE BICICLETAS LTDA (DAL ANNIO BIKE)"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO GABRIELA DE OLIV",
+    "clientes": [
+      {
+        "cod_cli": 30493622,
+        "razao": "GABRIELA DE OLIVEIRA GOES FERREIRA"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO MAD BIKES",
+    "clientes": [
+      {
+        "cod_cli": 31581445,
+        "razao": "MAD BIKES  COMERCIO DE BICICLETAS LTDA"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO TEOBAR",
+    "clientes": [
+      {
+        "cod_cli": 97371199,
+        "razao": "TEOBAR MAURICIO DE OLIVEIRA EPP"
+      },
+      {
+        "cod_cli": 81024499,
+        "razao": "TEOBAR MAURICIO DE OLIVEIRA LTDA"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO FR BIKE",
+    "clientes": [
+      {
+        "cod_cli": 27159479,
+        "razao": "FR BIKES COMERCIO DE BICICLETAS E PECAS EIRELI"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO JC BIKE",
+    "clientes": [
+      {
+        "cod_cli": 29091348,
+        "razao": "JC BIKE PRO LTDA"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO OFICINA DE BIC.",
+    "clientes": [
+      {
+        "cod_cli": 170954,
+        "razao": "G.CARLOS COM.E OFICINA DE BIC.LTDA ME"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO SPORT CICLE",
+    "clientes": [
+      {
+        "cod_cli": 95780920,
+        "razao": "SPORT CICLE LTDA ME"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO JK BIKE",
+    "clientes": [
+      {
+        "cod_cli": 10398826,
+        "razao": "JK BIKE DIST.DE BIC.LTDA ME"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO K7 COMERCIO",
+    "clientes": [
+      {
+        "cod_cli": 26033984,
+        "razao": "K7 COMERCIO DE BICICLETAS EIRELI"
+      }
+    ]
+  },
+  {
+    "nome": "GRUPO GREFT",
+    "clientes": [
+      {
+        "cod_cli": 57192639,
+        "razao": "JOAO VICTOR GREFT"
+      }
+    ]
+  }
+]

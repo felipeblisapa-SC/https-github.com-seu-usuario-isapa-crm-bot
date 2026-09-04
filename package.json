@@ -1,0 +1,22 @@
+{
+  "name": "isapa-crm-bot",
+  "version": "1.0.0",
+  "description": "Assistente Claudia - CRM Isapa Bike via WhatsApp",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "@whiskeysockets/baileys": "^6.7.9",
+    "chart.js": "^4.4.4",
+    "express": "^4.21.1",
+    "pino": "^9.5.0",
+    "qrcode-terminal": "^0.12.0",
+    "sharp": "^0.33.5"
+  }
+}

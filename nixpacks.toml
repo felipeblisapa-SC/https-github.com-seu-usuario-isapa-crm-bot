@@ -1,0 +1,5 @@
+# Garante que o poppler-utils (comando pdftoppm) esteja disponivel no
+# container do Railway - e' usado pela Claudia para recortar as fotos dos
+# produtos a partir do catalogo em PDF.
+[phases.setup]
+aptPkgs = ["poppler-utils"]
