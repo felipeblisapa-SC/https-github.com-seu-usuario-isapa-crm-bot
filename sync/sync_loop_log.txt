@@ -7646,3 +7646,227 @@ urllib.error.URLError: <urlopen error [Errno 11001] getaddrinfo failed>
 2026-09-04 16:55:38,054 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
 2026-09-04 16:55:38,055 [INFO] Sincronizacao concluida com sucesso.
 [04/09/2026 16:55:38,08] Sincronizacao terminou. Proxima em 30 minutos. 
+[04/09/2026 17:25:38,12] Iniciando sincronizacao... 
+2026-09-04 17:25:38,567 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-04 17:25:38,584 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-04 17:25:39,119 [INFO] Pacote montado: 536 clientes (239 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-04 17:25:41,006 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-04 17:25:41,006 [INFO] Sincronizacao concluida com sucesso.
+[04/09/2026 17:25:41,03] Sincronizacao terminou. Proxima em 30 minutos. 
+[04/09/2026 17:55:41,15] Iniciando sincronizacao... 
+2026-09-04 17:55:41,501 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-04 17:55:41,514 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-04 17:55:42,000 [INFO] Pacote montado: 536 clientes (239 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-04 17:55:43,879 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-04 17:55:43,879 [INFO] Sincronizacao concluida com sucesso.
+[04/09/2026 17:55:43,90] Sincronizacao terminou. Proxima em 30 minutos. 
+[04/09/2026 18:25:43,11] Iniciando sincronizacao... 
+2026-09-04 18:25:43,405 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-04 18:25:43,417 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-04 18:25:43,904 [INFO] Pacote montado: 536 clientes (239 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-04 18:25:58,751 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-04 18:25:58,751 [INFO] Sincronizacao concluida com sucesso.
+[04/09/2026 18:25:58,77] Sincronizacao terminou. Proxima em 30 minutos. 
+[04/09/2026 18:55:58,13] Iniciando sincronizacao... 
+2026-09-04 18:55:58,406 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-04 18:55:58,419 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-04 18:55:58,908 [INFO] Pacote montado: 536 clientes (239 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-04 18:56:00,773 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-04 18:56:00,773 [INFO] Sincronizacao concluida com sucesso.
+[04/09/2026 18:56:00,79] Sincronizacao terminou. Proxima em 30 minutos. 
+[04/09/2026 19:26:00,19] Iniciando sincronizacao... 
+2026-09-04 19:26:00,471 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-04 19:26:00,483 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-04 19:26:00,972 [INFO] Pacote montado: 536 clientes (239 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-04 19:26:02,870 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-04 19:26:02,870 [INFO] Sincronizacao concluida com sucesso.
+[04/09/2026 19:26:02,89] Sincronizacao terminou. Proxima em 30 minutos. 
+[04/09/2026 19:56:02,19] Iniciando sincronizacao... 
+2026-09-04 19:56:02,497 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-04 19:56:02,510 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-04 19:56:02,992 [INFO] Pacote montado: 536 clientes (239 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-04 19:56:05,710 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-04 19:56:05,710 [INFO] Sincronizacao concluida com sucesso.
+[04/09/2026 19:56:05,75] Sincronizacao terminou. Proxima em 30 minutos. 
+[04/09/2026 20:26:05,18] Iniciando sincronizacao... 
+2026-09-04 20:26:05,465 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-04 20:26:05,478 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-04 20:26:05,962 [INFO] Pacote montado: 536 clientes (239 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-04 20:26:07,872 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-04 20:26:07,872 [INFO] Sincronizacao concluida com sucesso.
+[04/09/2026 20:26:07,89] Sincronizacao terminou. Proxima em 30 minutos. 
+[04/09/2026 20:56:07,19] Iniciando sincronizacao... 
+2026-09-04 20:56:07,486 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-04 20:56:07,499 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-04 20:56:07,995 [INFO] Pacote montado: 536 clientes (239 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-04 20:56:09,901 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-04 20:56:09,901 [INFO] Sincronizacao concluida com sucesso.
+[04/09/2026 20:56:09,92] Sincronizacao terminou. Proxima em 30 minutos. 
+[04/09/2026 21:26:09,15] Iniciando sincronizacao... 
+2026-09-04 21:26:09,445 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-04 21:26:09,458 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-04 21:26:09,953 [INFO] Pacote montado: 536 clientes (239 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-04 21:26:11,866 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-04 21:26:11,866 [INFO] Sincronizacao concluida com sucesso.
+[04/09/2026 21:26:11,89] Sincronizacao terminou. Proxima em 30 minutos. 
+[04/09/2026 21:56:11,14] Iniciando sincronizacao... 
+2026-09-04 21:56:11,433 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-04 21:56:11,445 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-04 21:56:11,931 [INFO] Pacote montado: 536 clientes (239 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-04 21:56:14,647 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-04 21:56:14,647 [INFO] Sincronizacao concluida com sucesso.
+[04/09/2026 21:56:14,67] Sincronizacao terminou. Proxima em 30 minutos. 
+[04/09/2026 22:26:14,15] Iniciando sincronizacao... 
+2026-09-04 22:26:14,425 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-04 22:26:14,437 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-04 22:26:14,914 [INFO] Pacote montado: 536 clientes (239 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-04 22:26:16,875 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-04 22:26:16,875 [INFO] Sincronizacao concluida com sucesso.
+[04/09/2026 22:26:16,91] Sincronizacao terminou. Proxima em 30 minutos. 
+[04/09/2026 22:56:16,18] Iniciando sincronizacao... 
+2026-09-04 22:56:17,128 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-04 22:56:17,148 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-04 22:56:17,645 [INFO] Pacote montado: 536 clientes (239 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-04 22:56:19,576 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-04 22:56:19,576 [INFO] Sincronizacao concluida com sucesso.
+[04/09/2026 22:56:19,60] Sincronizacao terminou. Proxima em 30 minutos. 
+[04/09/2026 23:26:19,12] Iniciando sincronizacao... 
+2026-09-04 23:26:19,407 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-04 23:26:19,420 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-04 23:26:19,904 [INFO] Pacote montado: 536 clientes (239 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-04 23:26:21,921 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-04 23:26:21,922 [INFO] Sincronizacao concluida com sucesso.
+[04/09/2026 23:26:21,94] Sincronizacao terminou. Proxima em 30 minutos. 
+[04/09/2026 23:56:21,18] Iniciando sincronizacao... 
+2026-09-04 23:56:21,453 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-04 23:56:21,465 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-04 23:56:21,943 [INFO] Pacote montado: 536 clientes (239 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-04 23:56:23,938 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-04 23:56:23,938 [INFO] Sincronizacao concluida com sucesso.
+[04/09/2026 23:56:23,96] Sincronizacao terminou. Proxima em 30 minutos. 
+[05/09/2026  0:26:24,14] Iniciando sincronizacao... 
+2026-09-05 00:26:24,437 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-05 00:26:24,449 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-05 00:26:24,933 [INFO] Pacote montado: 536 clientes (248 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-05 00:26:27,030 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-05 00:26:27,030 [INFO] Sincronizacao concluida com sucesso.
+[05/09/2026  0:26:27,05] Sincronizacao terminou. Proxima em 30 minutos. 
+[05/09/2026  0:56:27,18] Iniciando sincronizacao... 
+2026-09-05 00:56:27,472 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-05 00:56:27,484 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-05 00:56:27,968 [INFO] Pacote montado: 536 clientes (248 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-05 00:56:29,934 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-05 00:56:29,935 [INFO] Sincronizacao concluida com sucesso.
+[05/09/2026  0:56:29,96] Sincronizacao terminou. Proxima em 30 minutos. 
+[05/09/2026  1:26:30,17] Iniciando sincronizacao... 
+2026-09-05 01:26:30,452 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-05 01:26:30,464 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-05 01:26:30,947 [INFO] Pacote montado: 536 clientes (248 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-05 01:26:33,279 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-05 01:26:33,279 [INFO] Sincronizacao concluida com sucesso.
+[05/09/2026  1:26:33,30] Sincronizacao terminou. Proxima em 30 minutos. 
+[05/09/2026  1:56:33,18] Iniciando sincronizacao... 
+2026-09-05 01:56:33,443 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-05 01:56:33,455 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-05 01:56:33,939 [INFO] Pacote montado: 536 clientes (248 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-05 01:56:35,926 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-05 01:56:35,926 [INFO] Sincronizacao concluida com sucesso.
+[05/09/2026  1:56:35,94] Sincronizacao terminou. Proxima em 30 minutos. 
+[05/09/2026  2:26:35,17] Iniciando sincronizacao... 
+2026-09-05 02:26:35,441 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-05 02:26:35,454 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-05 02:26:35,932 [INFO] Pacote montado: 536 clientes (248 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-05 02:26:37,842 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-05 02:26:37,843 [INFO] Sincronizacao concluida com sucesso.
+[05/09/2026  2:26:37,86] Sincronizacao terminou. Proxima em 30 minutos. 
+[05/09/2026  2:56:37,20] Iniciando sincronizacao... 
+2026-09-05 02:56:37,471 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-05 02:56:37,484 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-05 02:56:37,970 [INFO] Pacote montado: 536 clientes (248 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-05 02:56:39,925 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-05 02:56:39,925 [INFO] Sincronizacao concluida com sucesso.
+[05/09/2026  2:56:39,95] Sincronizacao terminou. Proxima em 30 minutos. 
+[05/09/2026  3:26:39,19] Iniciando sincronizacao... 
+2026-09-05 03:26:39,478 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-05 03:26:39,490 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-05 03:26:39,981 [INFO] Pacote montado: 536 clientes (248 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-05 03:26:41,890 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-05 03:26:41,891 [INFO] Sincronizacao concluida com sucesso.
+[05/09/2026  3:26:41,91] Sincronizacao terminou. Proxima em 30 minutos. 
+[05/09/2026  3:56:41,16] Iniciando sincronizacao... 
+2026-09-05 03:56:41,471 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-05 03:56:41,483 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-05 03:56:41,965 [INFO] Pacote montado: 536 clientes (248 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-05 03:56:43,819 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-05 03:56:43,820 [INFO] Sincronizacao concluida com sucesso.
+[05/09/2026  3:56:43,84] Sincronizacao terminou. Proxima em 30 minutos. 
+[05/09/2026  4:26:43,13] Iniciando sincronizacao... 
+2026-09-05 04:26:43,409 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-05 04:26:43,422 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-05 04:26:43,907 [INFO] Pacote montado: 536 clientes (248 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-05 04:26:45,785 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-05 04:26:45,785 [INFO] Sincronizacao concluida com sucesso.
+[05/09/2026  4:26:45,80] Sincronizacao terminou. Proxima em 30 minutos. 
+[05/09/2026  4:56:45,14] Iniciando sincronizacao... 
+2026-09-05 04:56:45,426 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-05 04:56:45,438 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-05 04:56:45,965 [INFO] Pacote montado: 536 clientes (248 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-05 04:56:47,839 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-05 04:56:47,839 [INFO] Sincronizacao concluida com sucesso.
+[05/09/2026  4:56:47,86] Sincronizacao terminou. Proxima em 30 minutos. 
+[05/09/2026  5:26:47,21] Iniciando sincronizacao... 
+2026-09-05 05:26:47,492 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-05 05:26:47,505 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-05 05:26:47,991 [INFO] Pacote montado: 536 clientes (248 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-05 05:26:49,879 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-05 05:26:49,879 [INFO] Sincronizacao concluida com sucesso.
+[05/09/2026  5:26:49,89] Sincronizacao terminou. Proxima em 30 minutos. 
+[05/09/2026  5:56:49,16] Iniciando sincronizacao... 
+2026-09-05 05:56:49,448 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-05 05:56:49,460 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-05 05:56:49,948 [INFO] Pacote montado: 536 clientes (248 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-05 05:56:51,880 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-05 05:56:51,880 [INFO] Sincronizacao concluida com sucesso.
+[05/09/2026  5:56:51,90] Sincronizacao terminou. Proxima em 30 minutos. 
+[05/09/2026  6:26:51,21] Iniciando sincronizacao... 
+2026-09-05 06:26:51,493 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-05 06:26:51,506 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-05 06:26:51,996 [INFO] Pacote montado: 536 clientes (248 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-05 06:26:54,063 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-05 06:26:54,063 [INFO] Sincronizacao concluida com sucesso.
+[05/09/2026  6:26:54,08] Sincronizacao terminou. Proxima em 30 minutos. 
+[05/09/2026  6:56:54,17] Iniciando sincronizacao... 
+2026-09-05 06:56:54,463 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-05 06:56:54,476 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-05 06:56:54,961 [INFO] Pacote montado: 536 clientes (248 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-05 06:56:56,898 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-05 06:56:56,898 [INFO] Sincronizacao concluida com sucesso.
+[05/09/2026  6:56:56,92] Sincronizacao terminou. Proxima em 30 minutos. 
+[05/09/2026  7:26:56,15] Iniciando sincronizacao... 
+2026-09-05 07:26:56,433 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-05 07:26:56,445 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-05 07:26:56,922 [INFO] Pacote montado: 536 clientes (248 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-05 07:26:58,863 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-05 07:26:58,863 [INFO] Sincronizacao concluida com sucesso.
+[05/09/2026  7:26:58,88] Sincronizacao terminou. Proxima em 30 minutos. 
+[05/09/2026  7:56:58,13] Iniciando sincronizacao... 
+2026-09-05 07:56:58,423 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-05 07:56:58,435 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-05 07:56:58,917 [INFO] Pacote montado: 536 clientes (248 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-05 07:57:00,918 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-05 07:57:00,918 [INFO] Sincronizacao concluida com sucesso.
+[05/09/2026  7:57:00,94] Sincronizacao terminou. Proxima em 30 minutos. 
+[05/09/2026  8:27:00,21] Iniciando sincronizacao... 
+2026-09-05 08:27:01,335 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-05 08:27:01,360 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-05 08:27:01,847 [INFO] Pacote montado: 536 clientes (248 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-05 08:27:04,538 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-05 08:27:04,538 [INFO] Sincronizacao concluida com sucesso.
+[05/09/2026  8:27:04,56] Sincronizacao terminou. Proxima em 30 minutos. 
+[05/09/2026  8:57:04,14] Iniciando sincronizacao... 
+2026-09-05 08:57:04,526 [INFO] Iniciando sincronizacao do CRM Isapa Bike
+2026-09-05 08:57:04,539 [INFO] Catalogo carregado: 7301 codigos validos.
+2026-09-05 08:57:05,069 [INFO] Pacote montado: 536 clientes (248 criticos), 2871 pedidos, 50 produtos em destaque, 7283 precos, 7283 itens de estoque.
+2026-09-05 08:57:07,206 [INFO] Envio concluido. HTTP 200. Resposta: {"ok":true,"clientes_recebidos":536}
+2026-09-05 08:57:07,207 [INFO] Sincronizacao concluida com sucesso.
+[05/09/2026  8:57:07,23] Sincronizacao terminou. Proxima em 30 minutos. 

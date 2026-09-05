@@ -378,8 +378,14 @@ $sw = [Diagnostics.Stopwatch]::StartNew()
 $terminou = $false
 while ($sw.Elapsed.TotalSeconds -lt $TimeoutDownloadSeg) {
     if (Fechar-PopupOk) {
-        Log "Popup de confirmacao fechado (cliquei OK)."
-        Start-Sleep -Seconds 1
+        # O popup "Atualizacao Concluida com Sucesso!" so' aparece quando a
+        # recepcao terminou - isso ja' e' o sinal de fim. (Antes o script
+        # ficava esperando o botao Conectar reabilitar, o que nesta versao
+        # do MEX3000 nao acontece de forma confiavel e travava ate' o timeout.)
+        Log "Popup de confirmacao fechado (cliquei OK) - recepcao terminou."
+        Start-Sleep -Seconds 2
+        $terminou = $true
+        break
     }
     try {
         $btnConectarAtual = Find-DescendentePorNome $janelaConexao ([System.Windows.Automation.ControlType]::Button) "Conectar"
@@ -388,7 +394,13 @@ while ($sw.Elapsed.TotalSeconds -lt $TimeoutDownloadSeg) {
             break
         }
     } catch {
-        # a janela pode ter mudado de estado momentaneamente, so' continua tentando
+        # a janela de Conexao pode ter fechado sozinha ao terminar
+        $aindaExiste = Get-JanelaPorTitulo $TituloJanelaConexao 1 $janelaPrincipal
+        if (-not $aindaExiste) {
+            Log "Janela de Conexao fechou - considerando a recepcao terminada."
+            $terminou = $true
+            break
+        }
     }
     Start-Sleep -Seconds 3
 }
