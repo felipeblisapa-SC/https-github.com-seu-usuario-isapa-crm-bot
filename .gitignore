@@ -10,3 +10,4 @@ sync/ciclo_log.txt
 sync/credenciais_mex3000.xml
 sync/__pycache__/
 *.log
+sync/sync_loop_log.txt
